@@ -8,12 +8,11 @@ import { NavLink } from 'react-router-dom';
 
 function NavigationBar() {
   return (
-    <Navbar expand="lg" className="fw-bold text-light bg-dark">
+
+    <Navbar className="fw-bold text-light bg-dark">
       <Container>
       <Navbar.Brand className='fw-bold text-light'>COFFE SHOP</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav>
             <NavLink to='/' className='text-decoration-none'>HOME</NavLink>
             <NavLink to='/' className='text-decoration-none'>NOSOTROS</NavLink>
             <NavLink to='/Products' className='text-decoration-none'>TIENDA</NavLink>
@@ -25,9 +24,9 @@ function NavigationBar() {
               <NavDropdown.Item href="#action/3.3">Registrate</NavDropdown.Item>
             </NavDropdown>
           </Nav>
-        </Navbar.Collapse>
       </Container>
     </Navbar>
+
   );
 }
 
