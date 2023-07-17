@@ -7,6 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { NavLink } from 'react-router-dom';
 
 function NavigationBar() {
+
   return (
 
     <Navbar className="fw-bold text-light bg-dark">
