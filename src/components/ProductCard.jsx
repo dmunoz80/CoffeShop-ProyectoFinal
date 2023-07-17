@@ -23,7 +23,7 @@ const ProductCard = () => {
                         <ListGroup variant='flush'>
                             {e.ingredients.map((ingredients, index) => (
                                 <ListGroup.Item key={`${e.id}-${index}`}>
-                                    🍕{ingredients}
+                                    ☕{ingredients}
                                 </ListGroup.Item>
                             ))}
                         </ListGroup>

@@ -3,7 +3,12 @@
     "desc": "El café negro es muy simple, se obtiene con granos de café molidos remojados en agua caliente, servidos tibios.",
     "id": "P001",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
-    "ingredients": ["mozzarella", "tomates", "jamón", "orégano"],
+    "ingredients": [
+      "ingrediente 1",
+      "ingrediente 2",
+      "ingrediente 3",
+      "ingrediente 4"
+    ],
     "name": "Café 1",
     "price": 5950
   },
@@ -11,7 +16,12 @@
     "desc": "El café negro es muy simple, se obtiene con granos de café molidos remojados en agua caliente, servidos tibios.",
     "id": "P002",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
-    "ingredients": ["mozzarella", "tomates", "jamón", "choricillo"],
+    "ingredients": [
+      "ingrediente 1",
+      "ingrediente 2",
+      "ingrediente 3",
+      "ingrediente 4"
+    ],
     "name": "Café 2",
     "price": 7250
   },
@@ -19,7 +29,12 @@
     "desc": "El café negro es muy simple, se obtiene con granos de café molidos remojados en agua caliente, servidos tibios.",
     "id": "P003",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
-    "ingredients": ["mozzarella", "tomates", "salame", "orégano"],
+    "ingredients": [
+      "ingrediente 1",
+      "ingrediente 2",
+      "ingrediente 3",
+      "ingrediente 4"
+    ],
     "name": "Café 3",
     "price": 5990
   },
@@ -27,7 +42,12 @@
     "desc": "El café negro es muy simple, se obtiene con granos de café molidos remojados en agua caliente, servidos tibios.",
     "id": "P004",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
-    "ingredients": ["mozzarella", "salame", "aceitunas", "champiñones"],
+    "ingredients": [
+      "ingrediente 1",
+      "ingrediente 2",
+      "ingrediente 3",
+      "ingrediente 4"
+    ],
     "name": "café 4",
     "price": 9590
   },
@@ -35,7 +55,12 @@
     "desc": "El café negro es muy simple, se obtiene con granos de café molidos remojados en agua caliente, servidos tibios.",
     "id": "P005",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
-    "ingredients": ["mozzarella", "tomates cherry", "bacon", "orégano"],
+    "ingredients": [
+      "ingrediente 1",
+      "ingrediente 2",
+      "ingrediente 3",
+      "ingrediente 4"
+    ],
     "name": "café 5",
     "price": 6450
   },
@@ -43,7 +68,12 @@
     "desc": "El café negro es muy simple, se obtiene con granos de café molidos remojados en agua caliente, servidos tibios.",
     "id": "P006",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
-    "ingredients": ["mozzarella", "pimientos", "pollo grillé", "orégano"],
+    "ingredients": [
+      "ingrediente 1",
+      "ingrediente 2",
+      "ingrediente 3",
+      "ingrediente 4"
+    ],
     "name": "café 6",
     "price": 8500
   }
