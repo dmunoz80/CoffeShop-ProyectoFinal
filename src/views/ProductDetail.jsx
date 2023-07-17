@@ -24,7 +24,7 @@ const ProductDetail = () => {
                     <ListGroup key={pizzaInfo.id} variant='flush'>
                         {pizzaInfo.ingredients.map((ingredients,) => (
                             <ListGroup.Item key={ingredients}>
-                                🍕{ingredients}
+                                ☕{ingredients}
                             </ListGroup.Item>
                         ))}
                     </ListGroup>
