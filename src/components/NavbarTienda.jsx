@@ -2,7 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Navbar from 'react-bootstrap/Navbar';
-import logo from '../assets/images/Logo.png';
+import logo from '../assets/images/navbar-logo.png';
 
 function NavbarTienda() {
   return (
