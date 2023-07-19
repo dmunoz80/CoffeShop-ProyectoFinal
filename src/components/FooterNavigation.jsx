@@ -7,19 +7,19 @@ import { NavLink } from 'react-router-dom';
 
 function FooterNavigation() {
   return (
-    <Navbar expand="lg" className="fw-bold text-light bg-dark">
-      <Container>
-      <Navbar.Brand className='fw-bold text-light'></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar expand="lg" className="bg-dark" variant="dark">
+      <Container className='d-flex flex-column text-center p-2'>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className='m-3'  style={{bordercolor:"white"}} />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <NavLink to='/' className='text-decoration-none'>HOME</NavLink>
-            <NavLink to='/' className='text-decoration-none'>NOSOTROS</NavLink>
-            <NavLink to='/Products' className='text-decoration-none'>PRODUCTOS</NavLink>
-            <NavLink to='/' className='text-decoration-none'>COMENTARIOS</NavLink>
-            <NavLink to='/' className='text-decoration-none'>CONTACTO</NavLink>
+          <Nav className='d-flex gap-4 '>
+            <NavLink to='/' className='text-decoration-none text-light'>HOME</NavLink>
+            <NavLink to='/' className='text-decoration-none text-light'>NOSOTROS</NavLink>
+            <NavLink to='/Tienda' className='text-decoration-none text-light'>TIENDA</NavLink>
+            <NavLink to='/' className='text-decoration-none text-light'>COMENTARIOS</NavLink>
+            <NavLink to='/' className='text-decoration-none text-light'>CONTACTO</NavLink>
           </Nav>
         </Navbar.Collapse>
+        <Navbar.Text className='text-light m-2'>Ⓒ 2023.Cofee Shop Company. Reservados todos los derechos</Navbar.Text>
       </Container>
     </Navbar>
   );
