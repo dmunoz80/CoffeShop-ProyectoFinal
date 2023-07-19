@@ -17,7 +17,7 @@ function NavigationBar() {
           <Nav>
             <NavLink to='/' className='text-decoration-none p-2 text-white '>HOME</NavLink>
             <NavLink to='/' className='text-decoration-none p-2 text-white'>NOSOTROS</NavLink>
-            <NavLink to='/Products' className='text-decoration-none p-2 text-white'>TIENDA</NavLink>
+            <NavLink to='/Tienda' className='text-decoration-none p-2 text-white'>TIENDA</NavLink>
             <NavLink to='/' className='text-decoration-none p-2 text-white'>COMENTARIOS</NavLink>
             <NavLink to='/' className='text-decoration-none p-2 text-white'>CONTACTO</NavLink>
           </Nav>

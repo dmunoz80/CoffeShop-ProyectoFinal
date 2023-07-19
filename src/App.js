@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { GeneralProvider } from "./Context";
 import Home from "./views/Home";
 import ProductDetail from "./views/ProductDetail";
-import Products from "./views/Products";
+import Tienda from "./views/Tienda";
 import Cart from "./views/Cart";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/Products" element={<Products />} />
+            <Route path="/Tienda" element={<Tienda />} />
             <Route path="/pizza/:id" element={<ProductDetail />} />
             <Route path="/ShopCart" element={<Cart />} />
           </Routes>

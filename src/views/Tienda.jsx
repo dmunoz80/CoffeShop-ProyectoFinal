@@ -1,13 +1,15 @@
 import ProductCard from "../components/ProductCard";
 import FooterNavigation from "../components/FooterNavigation";
+import NavbarTienda from "../components/NavbarTienda";
 
-const Products = () => {
+const Tienda = () => {
     return (
         <>
+            <NavbarTienda />
             <ProductCard />
             <FooterNavigation />
         </>
     )
 }
 
-export default Products;
+export default Tienda;
