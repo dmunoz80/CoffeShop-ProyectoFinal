@@ -20,6 +20,7 @@ function Footer() {
             <NavLink to='/' className='text-decoration-none'>CONTACTO</NavLink>
           </Nav>
         </Navbar.Collapse>
+        <Navbar.Text className='text-light m-2'>Ⓒ 2023.Cofee Shop Company. Reservados todos los derechos</Navbar.Text>
       </Container>
     </Navbar>
   );
