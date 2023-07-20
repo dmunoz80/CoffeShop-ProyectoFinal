@@ -4,6 +4,7 @@ import { ListGroup } from 'react-bootstrap';
 import Context from "../Context";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import FooterNavigation from "../components/FooterNavigation";
 
 const ProductDetail = () => {
     const { id } = useParams();
@@ -12,7 +13,8 @@ const ProductDetail = () => {
     const pizzaInfo = pizzas.find(pizza => pizza.id.toString() === id);
 
     return (
-        <div className= " d-flex flex-wrap justify-content-center">
+        <>
+        <div className= " d-flex flex-wrap justify-content-center p-5">
             <Card className="d-flex flex-row border-success mt-5" style={{width: '80rem'}}>
                 <Card.Img src={pizzaInfo.img} alt={pizzaInfo.name} />
                 <Card.Body className="mx-4">
@@ -38,6 +40,10 @@ const ProductDetail = () => {
                 </Card.Body>
             </Card>
         </div>
+
+        <FooterNavigation />
+        </>
+        
     )
 }
 
