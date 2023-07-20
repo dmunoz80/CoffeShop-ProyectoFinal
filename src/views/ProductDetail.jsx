@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { useParams} from "react-router-dom";
-import { ListGroup } from 'react-bootstrap';
 import Context from "../Context";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -15,27 +14,19 @@ const ProductDetail = () => {
     return (
         <>
         <div className= " d-flex flex-wrap justify-content-center p-5">
-            <Card className="d-flex flex-row border-success mt-5" style={{width: '80rem'}}>
-                <Card.Img src={pizzaInfo.img} alt={pizzaInfo.name} />
-                <Card.Body className="mx-4">
-                    <Card.Title className='bg-warning fs-1 text-center'>{(pizzaInfo.name)}</Card.Title>
+            <Card className="d-flex flex-row mt-5" style={{width: '80rem', borderColor:"#874421"}}>
+                <Card.Img className="m-4" src={pizzaInfo.img} alt={pizzaInfo.name} />
+                <Card.Body className=" d-flex flex-column m-4 gap-4">
+                    <Card.Title style={{backgroundColor:"#874421", borderColor:"#874421"}} className='fs-1 text-center text-light'>{(pizzaInfo.name)}</Card.Title>
                     <Card.Text>
                         {pizzaInfo.desc}
                     </Card.Text>
-                    <p className='fw-bold bg-success text-light px-3'>Ingredientes:</p>
-                    <ListGroup key={pizzaInfo.id} variant='flush'>
-                        {pizzaInfo.ingredients.map((ingredients,) => (
-                            <ListGroup.Item key={ingredients}>
-                                ☕{ingredients}
-                            </ListGroup.Item>
-                        ))}
-                    </ListGroup>
                     <hr/>
                     <span className="fw-bold fs-3">
                         Precio: ${pizzaInfo.price}
                     </span>
                     <div className='d-flex flex-row justify-content-around'>
-                        <Button className='fw-bold bg-success border-success m-3' onClick={() => handleClick(pizzaInfo)}>Añadir al carro</Button>
+                        <Button className='fw-bold m-3' onClick={() => handleClick(pizzaInfo)} style={{backgroundColor:"#5b1f00", borderColor:"#5b1f00"}}>Añadir al carro</Button>
                     </div>
                 </Card.Body>
             </Card>
