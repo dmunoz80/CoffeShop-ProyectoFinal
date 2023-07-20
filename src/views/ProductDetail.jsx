@@ -4,6 +4,7 @@ import Context from "../Context";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import FooterNavigation from "../components/FooterNavigation";
+import NavbarProductDetail from "../components/NavbarProductDetail";
 
 const ProductDetail = () => {
     const { id } = useParams();
@@ -13,6 +14,8 @@ const ProductDetail = () => {
 
     return (
         <>
+<NavbarProductDetail />
+
         <div className= " d-flex flex-wrap justify-content-center p-5">
             <Card className="d-flex flex-row mt-5" style={{width: '80rem', borderColor:"#874421"}}>
                 <Card.Img className="m-4" src={pizzaInfo.img} alt={pizzaInfo.name} />
