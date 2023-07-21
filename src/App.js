@@ -3,7 +3,9 @@ import { GeneralProvider } from "./Context";
 import Home from "./views/Home";
 import ProductDetail from "./views/ProductDetail";
 import Tienda from "./views/Tienda";
+import Nosotros from "./views/Nosotros"
 import Cart from "./views/Cart";
+
 
 function App() {
   
@@ -13,6 +15,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/Nosotros" element={<Nosotros />} />
             <Route path="/Tienda" element={<Tienda />} />
             <Route path="/pizza/:id" element={<ProductDetail />} />
             <Route path="/ShopCart" element={<Cart />} />
