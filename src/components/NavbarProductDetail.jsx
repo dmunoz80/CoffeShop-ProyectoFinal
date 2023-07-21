@@ -22,7 +22,7 @@ function NavbarProductDetail() {
             <h2>COFFE SHOP</h2>
         </Navbar.Brand>
         <h1 className='mx-auto'>DETALLE DEL PRODUCTO</h1>
-        <NavLink to='/ShopCart' className='fw-bold text-light text-decoration-none'>
+        <NavLink to='/ShopCart' className='fw-bold text-light text-decoration-none px-5'>
               <FaShoppingCart size={'2em'}/> ${total}
         </NavLink>
       </Container>
