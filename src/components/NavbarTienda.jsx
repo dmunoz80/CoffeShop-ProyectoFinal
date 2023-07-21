@@ -24,18 +24,20 @@ function NavbarTienda() {
         </Navbar.Brand>
         <h1>TIENDA</h1>
 
+        <div className='d-flex gap-3'>
         <Form className="d-flex">
             <Form.Control
               value={buscar}
               onChange = {busqueda}
               type="text"
-              placeholder="Busca tu café favorito"
+              placeholder="Busca tu producto favorito"
             />
           </Form>
 
-            <NavLink to='/ShopCart' className='fw-bold text-light text-decoration-none mx-3'>
+            <NavLink to='/ShopCart' className='fw-bold text-light text-decoration-none mx-3 px-3'>
             <FaShoppingCart size={'2em'}/> ${total}
             </NavLink>
+            </div>
 
       </Container>
     </Navbar>
