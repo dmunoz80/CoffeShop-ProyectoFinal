@@ -3,13 +3,13 @@ import React, { createContext, useEffect, useState } from "react";
 const Context = createContext();
 
 const GeneralProvider = ({ children }) => {
-    const [pizzas, setPizzas] = useState([]);
+    const [products, setProducts] = useState([]);
     const [ShopCart, setShopCart] = useState([]);
     const [total, setTotal] = useState(0)
     const [buscar, setBuscar] = useState ('')
 
 
-    const dataPizza = async () => {
+    const dataProduct = async () => {
         const res = await fetch('/product.json');
         const data = await res.json();
         const newData = data.map((e) => ({
@@ -21,62 +21,62 @@ const GeneralProvider = ({ children }) => {
             price: e.price,
             quantity: 1
         }))
-        setPizzas(newData);
+        setProducts(newData);
     }
 
     useEffect(() => {
-        dataPizza()
+        dataProduct()
     }, []);
 
-    //Agregar Pizzas al carro de compras en Home
-    const addToCart = (selectedPizza) => {
-        const index = ShopCart.findIndex(e => e.id === selectedPizza.id);
+    //Agregar Productos al carro de compras en Tienda
+    const addToCart = (selectedProduct) => {
+        const index = ShopCart.findIndex(e => e.id === selectedProduct.id);
         if (index !== -1) {
-            const updatedPizzas = [...ShopCart];
-            updatedPizzas[index].quantity += 1;
-            setShopCart(updatedPizzas);
+            const updatedProducts = [...ShopCart];
+            updatedProducts[index].quantity += 1;
+            setShopCart(updatedProducts);
         } else {
-            setShopCart(pizzas => [...pizzas, { ...selectedPizza, quantity: 1 }]);
+            setShopCart(products => [...products, { ...selectedProduct, quantity: 1 }]);
         }
-        setTotal((e) => e + selectedPizza.price)
+        setTotal((e) => e + selectedProduct.price)
     }
 
-    const handleClick = (selectedPizza) => {
-        addToCart(selectedPizza)
+    const handleClick = (selectedProduct) => {
+        addToCart(selectedProduct)
     }
 
     //Suma o resta de Items al carro de compras
     const AddItem = (id) => {
-        const pizzaUp = ShopCart.map((pizza) => {
-            if (pizza.id === id) {
-                return { ...pizza, quantity: pizza.quantity += 1 }
+        const productUp = ShopCart.map((product) => {
+            if (product.id === id) {
+                return { ...product, quantity: product.quantity += 1 }
             } else {
-                return pizza;
+                return product;
             }
         })
-        setShopCart(pizzaUp);
+        setShopCart(productUp);
         priceTotal();
     }
 
     const SubtractItem = (id) => {
-        const pizzaDown = ShopCart.map((pizza) => {
-            if (pizza.id === id) {
-                return { ...pizza, quantity: pizza.quantity -= 1 }
+        const productDown = ShopCart.map((product) => {
+            if (product.id === id) {
+                return { ...product, quantity: product.quantity -= 1 }
             } else {
-                return pizza
+                return product
             }
         })
-        setShopCart(pizzaDown.filter((pizza) => pizza.quantity > 0));
+        setShopCart(productDown.filter((product) => product.quantity > 0));
         priceTotal();
     }
 
     //suma o resta precios al carrito
     const priceTotal = () => {
-        const totalPrice = ShopCart.reduce((acc, pizza) => acc + pizza.price * pizza.quantity, 0);
+        const totalPrice = ShopCart.reduce((acc, product) => acc + product.price * product.quantity, 0);
         setTotal(totalPrice);
     }
 
-    //Función para realizar el filtrado
+    //Función para realizar el filtrado o busqueda de productos
 
     const busqueda = (e) => {
         e.preventDefault()
@@ -84,17 +84,17 @@ const GeneralProvider = ({ children }) => {
     }
     let resultadoBusqueda = []
     if(!buscar) {
-        resultadoBusqueda = pizzas
+        resultadoBusqueda = products
     } else{
-        resultadoBusqueda = pizzas.filter((e) =>
+        resultadoBusqueda = products.filter((e) =>
         e.name.toLowerCase().includes(buscar.toLocaleLowerCase()) )
     }
  
     return (
         <Context.Provider value={
             {
-                pizzas,
-                setPizzas,
+                products,
+                setProducts,
                 handleClick,
                 ShopCart,
                 setShopCart,
