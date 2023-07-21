@@ -8,8 +8,8 @@ import NavbarProductDetail from "../components/NavbarProductDetail";
 
 const ProductDetail = () => {
     const { id } = useParams();
-    const { pizzas, handleClick } = useContext(Context);
-    const pizzaInfo = pizzas.find(pizza => pizza.id.toString() === id);
+    const { products, handleClick } = useContext(Context);
+    const productInfo = products.find(product => product.id.toString() === id);
 
     return (
         <>
@@ -18,24 +18,24 @@ const ProductDetail = () => {
 
         <div className=" d-flex flex-wrap justify-content-center p-5">
             <Card className="d-flex flex-row mt-5" style={{width: '80rem', border:"solid", borderColor:"#b4764f"}}>
-                <Card.Img className="m-4" src={pizzaInfo.img} alt={pizzaInfo.name} />
+                <Card.Img className="m-4" src={productInfo.img} alt={productInfo.name} />
                 <Card.Body className=" d-flex flex-column m-4 gap-4">
                     <Card.Title 
                         style={{backgroundColor:"#874421", borderColor:"#874421"}} 
                         className='fs-1 text-center text-light'
-                        >{(pizzaInfo.name)}</Card.Title>
+                        >{(productInfo.name)}</Card.Title>
                     <Card.Text>
-                        {pizzaInfo.desc}
+                        {productInfo.desc}
                     </Card.Text>
                     <hr/>
                     <span className="fw-bold fs-3">
-                        Precio: ${pizzaInfo.price}
+                        Precio: ${productInfo.price}
                     </span>
                     <div className='d-flex flex-row justify-content-around'>
                         <Button
                         variant="outline-dark"
                         className='fw-bold m-3' 
-                        onClick={() => handleClick(pizzaInfo)} 
+                        onClick={() => handleClick(productInfo)} 
                         style={{border:"solid", borderColor:"#b4764f"}}
                         >Añadir al carro</Button>
                     </div>

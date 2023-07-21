@@ -24,7 +24,7 @@ const ProductCard = () => {
                         <div className='d-flex flex-column gap-3'>
                             <Button 
                                 variant="outline-dark"
-                                onClick={() => navigate(`/pizza/${e.id}`)}
+                                onClick={() => navigate(`/product/${e.id}`)}
                                 style={{border:"solid", borderColor:"#b4764f"}}>
                                 Ver más
                             </Button>
