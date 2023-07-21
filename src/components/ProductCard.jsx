@@ -13,7 +13,7 @@ const ProductCard = () => {
     return (
         <div className="d-flex flex-wrap justify-content-center gap-3 p-3">
             {resultadoBusqueda.map((e) => (
-                < Card className='border-success mt-5' key={e.id} style={{ width: '18rem'}}>
+                < Card className='mt-5' key={e.id} style={{ width: '18rem', border:"solid",borderColor:"#874421"}}>
                     <Card.Img src={e.img} alt={e.name} />
                     <Card.Body>
                         <Card.Title className='fs-3 text-center text-capitalize' >{(e.name)}</Card.Title>
@@ -22,14 +22,17 @@ const ProductCard = () => {
                             Precio: ${e.price}
                         </h3>
                         <div className='d-flex flex-column gap-3'>
-                            <Button
+                            <Button 
+                                variant="outline-dark"
                                 onClick={() => navigate(`/pizza/${e.id}`)}
-                                style={{backgroundColor:"#5b1f00", borderColor:"#5b1f00"}}>
+                                style={{border:"solid", borderColor:"#b4764f"}}>
                                 Ver más
                             </Button>
 
-                            <Button onClick={() => handleClick(e)}
-                            style={{backgroundColor:"#5b1f00", borderColor:"#5b1f00"}}>
+                            <Button 
+                                onClick={() => handleClick(e)}
+                                variant="outline-dark"
+                                style={{border:"solid", borderColor:"#b4764f"}}>
                                 Añadir al carro
                             </Button>
                         </div>
