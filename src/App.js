@@ -19,6 +19,7 @@ function App() {
             <Route path="/Tienda" element={<Tienda />} />
             <Route path="/product/:id" element={<ProductDetail />} />
             <Route path="/ShopCart" element={<Cart />} />
+            
           </Routes>
         </BrowserRouter>
       </GeneralProvider>
