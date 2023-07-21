@@ -1,5 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
+import { FaShoppingCart } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import { useContext } from 'react';
 import Context from '../Context';
@@ -22,7 +23,7 @@ function NavbarProductDetail() {
         </Navbar.Brand>
         <h1 className='mx-auto'>DETALLE DEL PRODUCTO</h1>
         <NavLink to='/ShopCart' className='fw-bold text-light text-decoration-none'>
-              🛒 ${total}
+              <FaShoppingCart size={'2em'}/> ${total}
         </NavLink>
       </Container>
     </Navbar>
