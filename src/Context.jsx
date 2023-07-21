@@ -2,11 +2,11 @@ import React, { createContext, useEffect, useState } from "react";
 
 const Context = createContext();
 
-
 const GeneralProvider = ({ children }) => {
     const [pizzas, setPizzas] = useState([]);
     const [ShopCart, setShopCart] = useState([]);
     const [total, setTotal] = useState(0)
+    
 
 
     const dataPizza = async () => {
@@ -76,6 +76,8 @@ const GeneralProvider = ({ children }) => {
         setTotal(totalPrice);
     }
 
+    //Función para realizar el filtrado
+ 
     return (
         <Context.Provider value={
             {
