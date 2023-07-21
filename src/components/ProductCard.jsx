@@ -7,12 +7,12 @@ import Context from '../Context';
 import { useNavigate } from 'react-router-dom';
 
 const ProductCard = () => {
-    const { pizzas, handleClick } = useContext(Context);
+    const {handleClick, resultadoBusqueda } = useContext(Context);
     const navigate = useNavigate();
 
     return (
         <div className="d-flex flex-wrap justify-content-center gap-3 p-3">
-            {pizzas.map((e) => (
+            {resultadoBusqueda.map((e) => (
                 < Card className='border-success mt-5' key={e.id} style={{ width: '18rem'}}>
                     <Card.Img src={e.img} alt={e.name} />
                     <Card.Body>

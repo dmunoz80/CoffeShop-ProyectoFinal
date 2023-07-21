@@ -6,7 +6,7 @@ const GeneralProvider = ({ children }) => {
     const [pizzas, setPizzas] = useState([]);
     const [ShopCart, setShopCart] = useState([]);
     const [total, setTotal] = useState(0)
-    
+    const [buscar, setBuscar] = useState ('')
 
 
     const dataPizza = async () => {
@@ -77,6 +77,18 @@ const GeneralProvider = ({ children }) => {
     }
 
     //Función para realizar el filtrado
+
+    const busqueda = (e) => {
+        e.preventDefault()
+        setBuscar(e.target.value)
+    }
+    let resultadoBusqueda = []
+    if(!buscar) {
+        resultadoBusqueda = pizzas
+    } else{
+        resultadoBusqueda = pizzas.filter((e) =>
+        e.name.toLowerCase().includes(buscar.toLocaleLowerCase()) )
+    }
  
     return (
         <Context.Provider value={
@@ -89,7 +101,10 @@ const GeneralProvider = ({ children }) => {
                 AddItem,
                 SubtractItem,
                 priceTotal,
-                total
+                total,
+                busqueda,
+                resultadoBusqueda,
+                buscar
             }}>
             {children}
         </Context.Provider>

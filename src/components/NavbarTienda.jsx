@@ -1,4 +1,3 @@
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Navbar from 'react-bootstrap/Navbar';
@@ -9,7 +8,7 @@ import Context from '../Context';
 import logo from '../assets/images/navbar-logo.png';
 
 function NavbarTienda() {
-  const { total } = useContext(Context);
+  const { total, buscar, busqueda } = useContext(Context);
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid className='bg-dark text-light p-3'>
@@ -27,12 +26,11 @@ function NavbarTienda() {
 
         <Form className="d-flex">
             <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
+              value={buscar}
+              onChange = {busqueda}
+              type="text"
+              placeholder="Busca tu café favorito"
             />
-            <Button>Search</Button>
           </Form>
 
             <NavLink to='/ShopCart' className='fw-bold text-light text-decoration-none mx-3'>
