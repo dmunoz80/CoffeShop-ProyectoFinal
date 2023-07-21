@@ -2,9 +2,13 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Navbar from 'react-bootstrap/Navbar';
+import { NavLink } from 'react-router-dom';
+import { useContext } from 'react';
+import Context from '../Context';
 import logo from '../assets/images/navbar-logo.png';
 
 function NavbarTienda() {
+  const { total } = useContext(Context);
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid className='bg-dark text-light p-3'>
@@ -28,6 +32,10 @@ function NavbarTienda() {
             />
             <Button>Search</Button>
           </Form>
+
+            <NavLink to='/ShopCart' className='fw-bold text-light text-decoration-none mx-3'>
+              🛒 ${total}
+            </NavLink>
 
       </Container>
     </Navbar>
