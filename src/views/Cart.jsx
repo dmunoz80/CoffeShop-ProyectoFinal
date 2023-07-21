@@ -13,9 +13,8 @@ const Cart = () => {
         <>
         <NavbarOrderDetail />
         <div>
-            <ListGroup className='d-flex flex-column align-items-center mt-5'>
+            <ListGroup className='d-flex flex-column align-items-center m-5'>
                 <ListGroup.Item style={{borderColor:"#874421"}}>
-                    <h2>Detalles del pedido:</h2>
                     {ShopCart.map((e) => (
                         <Card key={e.id} className='d-flex flex-row align-items-center mt-2 gap-3' style={{ width: '50rem', borderColor:"#874421" }}>
                             <Card.Img src={e.img} alt={e.name} style={{ width: '7rem' }} />
