@@ -3,11 +3,15 @@ import Context from "../Context";
 import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import FooterNavigation from "../components/FooterNavigation";
+import NavbarOrderDetail from "../components/NavbarOrderDetail";
 
 const Cart = () => {
     const { ShopCart, AddItem, SubtractItem, total } = useContext(Context);
 
     return (
+        <>
+        <NavbarOrderDetail />
         <div>
             <ListGroup className='d-flex flex-column align-items-center mt-5'>
                 <ListGroup.Item className='bg-warning bg-opacity-50'>
@@ -36,6 +40,9 @@ const Cart = () => {
                 </ListGroup.Item>
             </ListGroup>
         </div>
+
+        <FooterNavigation />
+        </>
     )
 }
 
