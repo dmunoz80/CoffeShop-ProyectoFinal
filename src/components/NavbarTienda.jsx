@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Navbar from 'react-bootstrap/Navbar';
+import { FaShoppingCart } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import { useContext } from 'react';
 import Context from '../Context';
@@ -34,7 +35,7 @@ function NavbarTienda() {
           </Form>
 
             <NavLink to='/ShopCart' className='fw-bold text-light text-decoration-none mx-3'>
-              🛒 ${total}
+            <FaShoppingCart size={'2em'}/> ${total}
             </NavLink>
 
       </Container>
