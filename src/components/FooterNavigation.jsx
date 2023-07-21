@@ -13,7 +13,7 @@ function FooterNavigation() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className='d-flex gap-4 '>
             <NavLink to='/' className='text-decoration-none text-light'>HOME</NavLink>
-            <NavLink to='/' className='text-decoration-none text-light'>NOSOTROS</NavLink>
+            <NavLink to='/Nosotros' className='text-decoration-none text-light'>NOSOTROS</NavLink>
             <NavLink to='/Tienda' className='text-decoration-none text-light'>TIENDA</NavLink>
             <NavLink to='/' className='text-decoration-none text-light'>COMENTARIOS</NavLink>
             <NavLink to='/' className='text-decoration-none text-light'>CONTACTO</NavLink>
