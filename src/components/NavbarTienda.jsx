@@ -24,7 +24,8 @@ function NavbarTienda() {
             <h2>COFFE SHOP</h2>
         </Navbar.Brand>
         <h1>TIENDA</h1>
-          <Form className="d-flex">
+
+        <Form className="d-flex">
             <Form.Control
               type="search"
               placeholder="Search"
