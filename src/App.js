@@ -5,6 +5,8 @@ import ProductDetail from "./views/ProductDetail";
 import Tienda from "./views/Tienda";
 import Nosotros from "./views/Nosotros"
 import Cart from "./views/Cart";
+import Login from "./views/Login";
+import Registre from "./views/Registre";
 
 
 function App() {
@@ -19,7 +21,8 @@ function App() {
             <Route path="/Tienda" element={<Tienda />} />
             <Route path="/product/:id" element={<ProductDetail />} />
             <Route path="/ShopCart" element={<Cart />} />
-            
+            <Route path="/Login" element={<Login />} />
+            <Route path="/Registre" element={<Registre />} />
           </Routes>
         </BrowserRouter>
       </GeneralProvider>
