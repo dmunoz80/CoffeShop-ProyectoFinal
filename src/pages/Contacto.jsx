@@ -6,8 +6,6 @@ const Contacto = () => {
     return (
         <>
             <Navbar title={"Contacto"}/>
-            
-            
         </>
     )
 }

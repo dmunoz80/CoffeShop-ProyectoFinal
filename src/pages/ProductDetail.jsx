@@ -13,7 +13,7 @@ const ProductDetail = () => {
 
     return (
         <>
-        {/* TO DO Pasar datos del carro por props o por context */}
+        {/* TODO Pasar datos del carro por props o por context al navbar */}
         <Navbar title={"Detalle Del Producto"} withCart />
 
         <div className=" d-flex flex-wrap justify-content-center p-5">
