@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import {Container, Row, Col} from "react-bootstrap"
 import nosotrosCafeteria from "../assets/images/nosotrosCafeteria.jpg"
 import InfoNosotros from "../components/InfoNosotros";
+import FooterNavigation from "../components/FooterNavigation";
 
 const Nosotros = () => {
   return (
@@ -28,6 +29,7 @@ const Nosotros = () => {
           </Col>
         </Row>
       </Container>
+      <FooterNavigation/>
     </>
   )
 }
