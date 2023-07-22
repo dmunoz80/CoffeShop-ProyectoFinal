@@ -2,13 +2,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import {Container, Navbar, Nav, Form} from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import { useContext } from 'react';
+import Context from '../Context';
 import logo from '../assets/images/navbar-logo.png';
 import { FaShoppingCart } from "react-icons/fa";
 
 function NavigationBar({title, withLinks, withCart, withSearch}) {
+  const { total } = useContext(Context);
   
   return (
-    
     <Navbar className="fw-bold text-light bg-dark">
       <Container>
       <Navbar.Brand>
@@ -42,7 +44,7 @@ function NavigationBar({title, withLinks, withCart, withSearch}) {
         </div>}
       {withCart && 
         <NavLink to='/ShopCart' className='fw-bold text-light text-decoration-none px-5'>
-          <FaShoppingCart size={'2em'}/> ${0}
+          <FaShoppingCart size={'2em'}/> ${total}
         </NavLink>
       }
       </Container>
