@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 const Tienda = () => {
     return (
         <>
-            <Navbar title={"Tienda"} withSearch withCart />
+            <Navbar title={"TIENDA"} withSearch withCart />
             <ProductCard />
             <FooterNavigation />
         </>

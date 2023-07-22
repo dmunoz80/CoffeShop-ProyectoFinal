@@ -18,7 +18,7 @@ const Contacto = () => {
     }
     return (
         <>
-            <Navbar title={"Contacto"}/>
+            <Navbar title={"CONTACTO"}/>
             <div className="contacto">
                 <Row>
                     <Col>
