@@ -7,7 +7,7 @@ import Nosotros from "./views/Nosotros"
 import Cart from "./views/Cart";
 import Login from "./views/Login";
 import Registre from "./views/Registre";
-import Contacto from "./pages/Contacto";
+import Contacto from "./views/Contacto";
 
 
 function App() {
