@@ -1,10 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { GeneralProvider } from "./Context";
-import Home from "./pages/Home";
-import ProductDetail from "./pages/ProductDetail";
-import Tienda from "./pages/Tienda";
-import Nosotros from "./pages/Nosotros"
-import Cart from "./pages/Cart";
+import Home from "./views/Home";
+import ProductDetail from "./views/ProductDetail";
+import Tienda from "./views/Tienda";
+import Nosotros from "./views/Nosotros"
+import Cart from "./views/Cart";
+import Login from "./views/Login";
+import Registre from "./views/Registre";
 import Contacto from "./pages/Contacto";
 
 
@@ -18,10 +20,11 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/Nosotros" element={<Nosotros />} />
             <Route path="/Tienda" element={<Tienda />} />
-            <Route path="/pizza/:id" element={<ProductDetail />} />
+            <Route path="/product/:id" element={<ProductDetail />} />
             <Route path="/ShopCart" element={<Cart />} />
             <Route path="/Contacto" element={<Contacto />} />
-            
+            <Route path="/Login" element={<Login />} />
+            <Route path="/Registre" element={<Registre />} />
           </Routes>
         </BrowserRouter>
       </GeneralProvider>

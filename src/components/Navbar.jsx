@@ -21,6 +21,8 @@ function NavigationBar({title, withLinks, withCart, withSearch}) {
             <NavLink to='/Tienda' className='text-decoration-none p-2 text-white'>TIENDA</NavLink>
             <NavLink to='/' className='text-decoration-none p-2 text-white'>COMENTARIOS</NavLink>
             <NavLink to='/Contacto' className='text-decoration-none p-2 text-white'>CONTACTO</NavLink>
+            <NavLink to='/Registre' className='text-decoration-none p-2 text-white'>INICIAR SESION</NavLink>
+            <NavLink to='/Login' className='text-decoration-none p-2 text-white'>REGISTRATE</NavLink>
           </Nav>
        
       }

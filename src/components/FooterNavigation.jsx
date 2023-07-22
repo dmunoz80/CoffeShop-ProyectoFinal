@@ -13,10 +13,12 @@ function FooterNavigation() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className='d-flex gap-4 '>
             <NavLink to='/' className='text-decoration-none text-light'>HOME</NavLink>
-            <NavLink to='/' className='text-decoration-none text-light'>NOSOTROS</NavLink>
+            <NavLink to='/Nosotros' className='text-decoration-none text-light'>NOSOTROS</NavLink>
             <NavLink to='/Tienda' className='text-decoration-none text-light'>TIENDA</NavLink>
             <NavLink to='/' className='text-decoration-none text-light'>COMENTARIOS</NavLink>
             <NavLink to='/' className='text-decoration-none text-light'>CONTACTO</NavLink>
+            <NavLink to='/Registre' className='text-decoration-none text-white'>INICIAR SESION</NavLink>
+            <NavLink to='/Login' className='text-decoration-none text-white'>REGISTRATE</NavLink>
           </Nav>
         </Navbar.Collapse>
         <Navbar.Text className='text-light m-2'>Ⓒ 2023.Cofee Shop Company. Reservados todos los derechos</Navbar.Text>
