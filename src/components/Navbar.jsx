@@ -8,8 +8,7 @@ import logo from '../assets/images/navbar-logo.png';
 import { FaShoppingCart } from "react-icons/fa";
 
 function NavigationBar({title, withLinks, withCart, withSearch}) {
-  const { total } = useContext(Context);
-  
+  const { total,buscar, busqueda } = useContext(Context);
   return (
     <Navbar className="fw-bold text-light bg-dark">
       <Container>
@@ -35,10 +34,10 @@ function NavigationBar({title, withLinks, withCart, withSearch}) {
         <div className='d-flex gap-3'>
           <Form className="d-flex">
             <Form.Control
-            
-            onChange = {() => {}}
-            type="text"
-            placeholder="Busca tu producto favorito"
+              value={buscar}
+              onChange = {busqueda}
+              type="text"
+              placeholder="Busca tu producto favorito"
             />
           </Form>
         </div>}
