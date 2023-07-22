@@ -7,7 +7,7 @@ import FooterNavigation from "../components/FooterNavigation";
 const Nosotros = () => {
   return (
     <>
-      <Navbar title={"Nosotros"} />
+      <Navbar title={"NOSOTROS"} />
       <Container className="mt-5">
         <Row>
           <Col>
