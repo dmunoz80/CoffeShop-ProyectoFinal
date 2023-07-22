@@ -1,11 +1,9 @@
-import NavbarNosotros from "../components/NavbarNosotros";
+import Navbar from "../components/Navbar";
 
 const Nosotros = () => {
     return (
         <>
-            <NavbarNosotros/>
-            
-            
+            <Navbar title={"Sobre Nosotros"} />
         </>
     )
 }

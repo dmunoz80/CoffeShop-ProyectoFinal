@@ -4,7 +4,7 @@ import Context from "../Context";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import FooterNavigation from "../components/FooterNavigation";
-import NavbarProductDetail from "../components/NavbarProductDetail";
+import Navbar from "../components/Navbar";
 
 const ProductDetail = () => {
     const { id } = useParams();
@@ -13,8 +13,8 @@ const ProductDetail = () => {
 
     return (
         <>
-
-        <NavbarProductDetail />
+        {/* TODO Pasar datos del carro por props o por context al navbar */}
+        <Navbar title={"Detalle Del Producto"} withCart />
 
         <div className=" d-flex flex-wrap justify-content-center p-5">
             <Card className="d-flex flex-row mt-5" style={{width: '80rem', border:"solid", borderColor:"#b4764f"}}>

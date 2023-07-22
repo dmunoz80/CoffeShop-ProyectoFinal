@@ -7,6 +7,7 @@ import Nosotros from "./views/Nosotros"
 import Cart from "./views/Cart";
 import Login from "./views/Login";
 import Registre from "./views/Registre";
+import Contacto from "./views/Contacto";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/Tienda" element={<Tienda />} />
             <Route path="/product/:id" element={<ProductDetail />} />
             <Route path="/ShopCart" element={<Cart />} />
+            <Route path="/Contacto" element={<Contacto />} />
             <Route path="/Login" element={<Login />} />
             <Route path="/Registre" element={<Registre />} />
           </Routes>

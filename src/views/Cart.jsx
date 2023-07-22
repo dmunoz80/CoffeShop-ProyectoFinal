@@ -4,7 +4,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import FooterNavigation from "../components/FooterNavigation";
-import NavbarOrderDetail from "../components/NavbarOrderDetail";
+import Navbar from "../components/Navbar";
 
 
 const Cart = () => {
@@ -12,7 +12,7 @@ const Cart = () => {
 
     return (
         <>
-        <NavbarOrderDetail />
+        <Navbar title={"Carro de compras"}/>
         <div>
             <ListGroup className='d-flex flex-column align-items-center m-5'>
                 <ListGroup.Item style={{border:"solid", borderColor:"#b4764f"}}>
