@@ -13,15 +13,15 @@ const Nosotros = () => {
           <Col>
              <InfoNosotros
               title={"Nuestra Historia"}
-              content={"Esta Tienda Nació de "}
+              content={"Tres Jovenes que para conservar la energía durante largas y arduas horas de trabajo se hicieron fanáticos del café. Esos primeros granos de café, que probaron entre una intensa variedad y especias del mundo se encontraban en cada taza de café que bebían. Es por esto que decideron ofrecer a cada cliente una invitación a llevarse parte de ese mundo -su mundo- a sus hogares. Y especialmente, compartirlo. "}
              />
             <InfoNosotros
               title={"Nuestra Misión"}
-              content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus neque euismod quam rhoncus, at blandit nulla ultricies. Pellentesque sollicitudin nunc purus, id ornare lorem condimentum eu. Mauris lacinia eu dui at lobortis. Phasellus ex arcu, finibus et justo eget, aliquet rhoncus enim. Nulla ipsum orci, pretium eu tellus nec, imperdiet sodales lorem."}
+              content={"Entregar alegría y proveer de energía el espíritu humano para avanzar en tu día a día."}
              />
              <InfoNosotros
               title={"Nuestros Productos"}
-              content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus neque euismod quam rhoncus, at blandit nulla ultricies. Pellentesque sollicitudin nunc purus, id ornare lorem condimentum eu. Mauris lacinia eu dui at lobortis. Phasellus ex arcu, finibus et justo eget, aliquet rhoncus enim. Nulla ipsum orci, pretium eu tellus nec, imperdiet sodales lorem. "}
+              content={"El aroma al café y a unos granos recién tostados, es la mejor bienvenida para brindarles nuestros productos. Pero eso es sólo el comienzo, ya que también tenemos accesorios para fanáticos que necesitan alegrar su día."}
              />
           </Col>
           <Col>
