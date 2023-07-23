@@ -17,7 +17,7 @@ const ProductDetail = () => {
         <Navbar title={"Detalle Del Producto"} withCart />
 
         <div className=" d-flex flex-wrap justify-content-center p-5">
-            <Card className="d-flex flex-row mt-5" style={{width: '80rem', border:"solid", borderColor:"#b4764f"}}>
+            <Card className="d-flex flex-row mt-5" style={{width: '80rem', borderColor:"#b4764f"}}>
                 <Card.Img className="m-4" src={productInfo.img} alt={productInfo.name} />
                 <Card.Body className=" d-flex flex-column m-4 gap-4">
                     <Card.Title 
@@ -36,7 +36,7 @@ const ProductDetail = () => {
                         variant="outline-dark"
                         className='fw-bold m-3' 
                         onClick={() => handleClick(productInfo)} 
-                        style={{border:"solid", borderColor:"#b4764f"}}
+                        style={{borderColor:"#b4764f"}}
                         >Añadir al carro</Button>
                     </div>
                 </Card.Body>
