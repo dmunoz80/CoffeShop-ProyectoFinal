@@ -26,20 +26,19 @@ function NavigationBar({ title, withLinks, withCart, withSearch }) {
             <NavLink to='/Comment' className='text-decoration-none p-2 text-white with-zoom'>COMENTARIOS</NavLink>
             <NavLink to='/Contacto' className='text-decoration-none p-2 text-white with-zoom'>CONTACTO</NavLink>
             
-      <Dropdown className='mx-3'>
-        <Dropdown.Toggle style={{backgroundColor:"#874421", borderColor:"#874421"}} id="dropdown-basic">
-        <FaRegCircleUser size={'2em'}/>
-        </Dropdown.Toggle>
-        <Dropdown.Menu>
-        <Dropdown.Item>
-          <NavLink to='/Login' className='text-decoration-none text-dark'>INICIAR SESION</NavLink>
-        </Dropdown.Item>
-        <Dropdown.Item>
-          <NavLink to='/Registre' className='text-decoration-none text-dark'>REGISTRATE</NavLink>
-        </Dropdown.Item>    
-        </Dropdown.Menu>
-      </Dropdown>
-
+            <Dropdown className='mx-3'>
+              <Dropdown.Toggle style={{backgroundColor:"#874421", borderColor:"#874421"}} id="dropdown-basic">
+              <FaRegCircleUser size={'2em'}/>
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+            <Dropdown.Item>
+              <NavLink to='/Login' className='text-decoration-none text-dark'>INICIAR SESION</NavLink>
+            </Dropdown.Item>
+            <Dropdown.Item>
+              <NavLink to='/Registre' className='text-decoration-none text-dark'>REGISTRATE</NavLink>
+            </Dropdown.Item>    
+            </Dropdown.Menu>
+            </Dropdown>
           </Nav>
       }
       {title && 

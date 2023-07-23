@@ -29,7 +29,7 @@
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
     "name": "café cuatro",
     "price": 9590,
-    "category": "polera"
+    "category": "tazon"
   },
   {
     "desc": "El café negro es muy simple, se obtiene con granos de café molidos remojados en agua caliente, servidos tibios.",
@@ -37,7 +37,7 @@
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
     "name": "café cinco",
     "price": 6450,
-    "category": "polera"
+    "category": "tazon"
   },
   {
     "desc": "El café negro es muy simple, se obtiene con granos de café molidos remojados en agua caliente, servidos tibios.",
@@ -45,7 +45,7 @@
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
     "name": "café seis",
     "price": 6450,
-    "category": "polera"
+    "category": "tazon"
   },
   {
     "desc": "El café negro es muy simple, se obtiene con granos de café molidos remojados en agua caliente, servidos tibios.",
@@ -53,7 +53,7 @@
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
     "name": "café siete",
     "price": 6450,
-    "category": "polera"
+    "category": "cafe"
   },
   {
     "desc": "El café negro es muy simple, se obtiene con granos de café molidos remojados en agua caliente, servidos tibios.",
@@ -61,21 +61,23 @@
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
     "name": "café ocho",
     "price": 6450,
-    "category": "polera"
+    "category": "cafe"
   },
   {
     "desc": "El café negro es muy simple, se obtiene con granos de café molidos remojados en agua caliente, servidos tibios.",
     "id": "P009",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
     "name": "café cinco",
-    "price": 6450
+    "price": 6450,
+    "category": "cafe"
   },
   {
     "desc": "El café negro es muy simple, se obtiene con granos de café molidos remojados en agua caliente, servidos tibios.",
     "id": "P010",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
     "name": "café cinco",
-    "price": 6450
+    "price": 6450,
+    "category": "cafe"
   },
   {
     "desc": "El café negro es muy simple, se obtiene con granos de café molidos remojados en agua caliente, servidos tibios.",
@@ -83,7 +85,7 @@
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
     "name": "café cinco",
     "price": 6450,
-    "category": "polera"
+    "category": "accesorios"
   },
   {
     "desc": "El café negro es muy simple, se obtiene con granos de café molidos remojados en agua caliente, servidos tibios.",
@@ -91,6 +93,6 @@
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
     "name": "café 6",
     "price": 8500,
-    "category": "polera"
+    "category": "accesorios"
   }
 ]
