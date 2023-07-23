@@ -11,7 +11,7 @@ import { FaUserCircle } from "react-icons/fa";
 function NavigationBar({title, withLinks, withCart, withSearch}) {
   const { total,buscar, busqueda } = useContext(Context);
   return (
-    <Navbar className="fw-bold text-light bg-dark">
+    <Navbar className="text-light bg-dark">
       <Container>
       <Navbar.Brand>
         <img src={logo} className='logo w-20' style={{width: "65px"}}></img>
@@ -55,7 +55,7 @@ function NavigationBar({title, withLinks, withCart, withSearch}) {
           </Form>
         </div>}
       {withCart && 
-        <NavLink to='/ShopCart' className='fw-bold text-light text-decoration-none px-5'>
+        <NavLink to='/ShopCart' className='text-light text-decoration-none px-5'>
           <FaShoppingCart size={'2em'}/> ${total}
         </NavLink>
       }
