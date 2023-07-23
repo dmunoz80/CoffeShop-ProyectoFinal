@@ -1,11 +1,11 @@
 import ProductCard from "../components/ProductCard";
 import FooterNavigation from "../components/FooterNavigation";
-import NavbarTienda from "../components/NavbarTienda";
+import Navbar from "../components/Navbar";
 
 const Tienda = () => {
     return (
         <>
-            <NavbarTienda />
+            <Navbar title={"TIENDA"} withSearch withCart />
             <ProductCard />
             <FooterNavigation />
         </>
