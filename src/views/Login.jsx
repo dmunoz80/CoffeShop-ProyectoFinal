@@ -9,7 +9,7 @@ import fotologin from "../assets/images/fotologin.jpeg"
 const Login = () => {
     return (
         <div>
-            <Navbar />
+            <Navbar title={"INICIO DE SESIÓN"}/>
             <Container>
                 <Row>
                     <Col>
