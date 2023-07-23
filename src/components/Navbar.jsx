@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import {Container, Navbar, Nav, Form, Dropdown} from 'react-bootstrap';
+import { Container, Navbar, Nav, Form, Dropdown } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { useContext } from 'react';
 import Context from '../Context';
@@ -8,15 +8,17 @@ import logo from '../assets/images/navbar-logo.png';
 import { BsCart3 } from "react-icons/bs";
 import { FaRegCircleUser } from "react-icons/fa6";
 
-function NavigationBar({title, withLinks, withCart, withSearch}) {
-  const { total,buscar, busqueda } = useContext(Context);
+function NavigationBar({ title, withLinks, withCart, withSearch }) {
+  const { total, buscar, busqueda } = useContext(Context);
   return (
     <Navbar className=" bg-img-navbar text-light bg-dark">
       <Container>
+    
       <Navbar.Brand>
         <img src={logo} className='logo' style={{width: "110px"}}></img>
       </Navbar.Brand>
       {withLinks && 
+
           <Nav className="justify-content-end">
             <NavLink to='/' className='text-decoration-none p-2 text-white with-zoom '>HOME</NavLink>
             <NavLink to='/Nosotros' className='text-decoration-none p-2 text-white with-zoom'>NOSOTROS</NavLink>
@@ -61,8 +63,8 @@ function NavigationBar({title, withLinks, withCart, withSearch}) {
       }
       </Container>
     </Navbar>
-      
+
   );
 }
-    
+
 export default NavigationBar;

@@ -9,7 +9,6 @@ const Registre = () => {
             <Navbar />
             <Formregistre />
             <FooterNavigation />
-
         </div>
     );
 }

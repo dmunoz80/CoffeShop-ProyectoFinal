@@ -12,7 +12,7 @@ import Contacto from "./views/Contacto"
 
 
 function App() {
-  
+
   return (
     <div className="App">
       <GeneralProvider>
