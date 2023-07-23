@@ -3,6 +3,7 @@ import CommentForm from '../components/CommentForm';
 import CommentList from '../components/CommentList';
 import Navbar from "../components/Navbar"
 import Footer from '../components/Footer';
+import FooterNavigation from '../components/FooterNavigation';
 
 const App = () => {
     const [comments, setComments] = useState([]);
@@ -32,7 +33,7 @@ const App = () => {
             <Navbar />
             <CommentForm onCommentSubmit={handleCommentSubmit} />
             <CommentList comments={comments} />
-            <Footer/>
+            <FooterNavigation/>
         </div>
     );
 };

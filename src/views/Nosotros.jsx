@@ -13,14 +13,14 @@ const Nosotros = () => {
           <Col>
              <InfoNosotros
               title={"Nuestra Historia"}
-              content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus neque euismod quam rhoncus, at blandit nulla ultricies. Pellentesque sollicitudin nunc purus, id ornare lorem condimentum eu. Mauris lacinia eu dui at lobortis. Phasellus ex arcu, finibus et justo eget, aliquet rhoncus enim. Nulla ipsum orci, pretium eu tellus nec, imperdiet sodales lorem."}
+              content={"Esta Tienda Nació de "}
              />
             <InfoNosotros
-              title={"Nuestra Historia"}
+              title={"Nuestra Misión"}
               content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus neque euismod quam rhoncus, at blandit nulla ultricies. Pellentesque sollicitudin nunc purus, id ornare lorem condimentum eu. Mauris lacinia eu dui at lobortis. Phasellus ex arcu, finibus et justo eget, aliquet rhoncus enim. Nulla ipsum orci, pretium eu tellus nec, imperdiet sodales lorem."}
              />
              <InfoNosotros
-              title={"Nuestra Historia"}
+              title={"Nuestros Productos"}
               content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus neque euismod quam rhoncus, at blandit nulla ultricies. Pellentesque sollicitudin nunc purus, id ornare lorem condimentum eu. Mauris lacinia eu dui at lobortis. Phasellus ex arcu, finibus et justo eget, aliquet rhoncus enim. Nulla ipsum orci, pretium eu tellus nec, imperdiet sodales lorem. "}
              />
           </Col>
