@@ -13,8 +13,8 @@ const Cart = () => {
     return (
         <>
         <Navbar title={"CARRO DE COMPRAS"}/>
-        <div>
-            <ListGroup className='d-flex flex-column align-items-center m-5'>
+        <div className="carro-compras">
+            <ListGroup className='d-flex flex-column align-items-center'>
                 <ListGroup.Item style={{borderColor:"#b4764f"}}>
                     {ShopCart.map((e) => (
                         <Card key={e.id} className='d-flex flex-row align-items-center mt-2 gap-3 with-zoom' style={{borderColor:"#b4764f"}}>

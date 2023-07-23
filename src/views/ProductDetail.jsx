@@ -14,7 +14,7 @@ const ProductDetail = () => {
     return (
         <>
         {/* TODO Pasar datos del carro por props o por context al navbar */}
-        <Navbar title={"Detalle Del Producto"} withCart />
+        <Navbar title={"DETALLE DEL PRODUCTO"} withCart />
 
         <div className=" main-product d-flex flex-wrap justify-content-center p-5">
             <Card className="d-flex flex-row mt-5" style={{width: '80rem', borderColor:"#b4764f"}}>

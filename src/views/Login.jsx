@@ -3,26 +3,26 @@ import Formlogin from "../components/Formlogin"
 import FooterNavigation from '../components/FooterNavigation';
 import Navbar from "../components/Navbar";
 import { Container, Row, Col } from "react-bootstrap"
-import fotologin from "../assets/images/fotologin.jpeg"
+import fotologin from "../assets/images/fotologin1.png"
 
 
 const Login = () => {
     return (
-        <div>
-            <Navbar title={"INICIO DE SESIÓN"}/>
+        <>
+        <Navbar title={"INICIO DE SESIÓN"}/>
+        <div className='login'>
             <Container>
                 <Row>
                     <Col>
                         <Formlogin />
                     </Col>
                     <Col>
-                    <img src={fotologin} alt='' style={{ width:"250" , borderRadius: "50px", margin: "10px" }}></img>
                     </Col>
                 </Row>
             </Container>
-            <FooterNavigation />
-
         </div>
+        <FooterNavigation />
+        </>
     );
 }
 
