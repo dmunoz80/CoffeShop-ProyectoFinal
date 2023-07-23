@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import { useContext } from 'react';
 import Context from '../Context';
 import logo from '../assets/images/navbar-logo.png';
-import { FaShoppingCart } from "react-icons/fa";
+import { BsCart3 } from "react-icons/bs";
 import { FaUserCircle } from "react-icons/fa";
 
 function NavigationBar({title, withLinks, withCart, withSearch}) {
@@ -56,7 +56,7 @@ function NavigationBar({title, withLinks, withCart, withSearch}) {
         </div>}
       {withCart && 
         <NavLink to='/ShopCart' className='text-light text-decoration-none px-5'>
-          <FaShoppingCart size={'2em'}/> ${total}
+          <BsCart3 size={'2em'}/> ${total}
         </NavLink>
       }
       </Container>
