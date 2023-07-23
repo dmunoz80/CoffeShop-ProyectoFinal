@@ -1,11 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import {Container, Navbar, Nav, Form} from 'react-bootstrap';
+import {Container, Navbar, Nav, Form, Dropdown} from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { useContext } from 'react';
 import Context from '../Context';
 import logo from '../assets/images/navbar-logo.png';
 import { FaShoppingCart } from "react-icons/fa";
+import { FaUserCircle } from "react-icons/fa";
 
 function NavigationBar({title, withLinks, withCart, withSearch}) {
   const { total,buscar, busqueda } = useContext(Context);
@@ -22,10 +23,22 @@ function NavigationBar({title, withLinks, withCart, withSearch}) {
             <NavLink to='/Tienda' className='text-decoration-none p-2 text-white with-zoom'>TIENDA</NavLink>
             <NavLink to='/' className='text-decoration-none p-2 text-white with-zoom'>COMENTARIOS</NavLink>
             <NavLink to='/Contacto' className='text-decoration-none p-2 text-white with-zoom'>CONTACTO</NavLink>
-            <NavLink to='/Registre' className='text-decoration-none p-2 text-white with-zoom'>INICIAR SESION</NavLink>
-            <NavLink to='/Login' className='text-decoration-none p-2 text-white with-zoom'>REGISTRATE</NavLink>
+            
+      <Dropdown className='mx-3'>
+        <Dropdown.Toggle variant="dark" id="dropdown-basic">
+        <FaUserCircle size={'2em'}/>
+        </Dropdown.Toggle>
+        <Dropdown.Menu>
+        <Dropdown.Item>
+          <NavLink to='/Registre' className='text-decoration-none text-dark'>INICIAR SESION</NavLink>
+        </Dropdown.Item>
+        <Dropdown.Item>
+          <NavLink to='/Login' className='text-decoration-none text-dark'>REGISTRATE</NavLink>
+        </Dropdown.Item>    
+        </Dropdown.Menu>
+      </Dropdown>
+
           </Nav>
-       
       }
       {title && 
         <h1 className='mx-auto'>{title}</h1>
