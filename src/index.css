@@ -14,3 +14,9 @@
 .with-zoom:hover {
   transform: scale(1.1);
 }
+
+.formulario {
+  color: #ffffff;
+  text-align: center;
+}
+
