@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import CommentForm from '../components/CommentForm';
 import CommentList from '../components/CommentList';
 import Navbar from "../components/Navbar"
-import Footer from '../components/Footer';
 import FooterNavigation from '../components/FooterNavigation';
 
 const App = () => {
@@ -30,7 +29,7 @@ const App = () => {
 
     return (
         <div>
-            <Navbar />
+            <Navbar title={"COMENTARIOS"}/>
             <CommentForm onCommentSubmit={handleCommentSubmit} />
             <CommentList comments={comments} />
             <FooterNavigation/>
