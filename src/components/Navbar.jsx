@@ -6,7 +6,7 @@ import { useContext } from 'react';
 import Context from '../Context';
 import logo from '../assets/images/navbar-logo.png';
 import { BsCart3 } from "react-icons/bs";
-import { FaUserCircle } from "react-icons/fa";
+import { FaRegCircleUser } from "react-icons/fa6";
 
 function NavigationBar({title, withLinks, withCart, withSearch}) {
   const { total,buscar, busqueda } = useContext(Context);
@@ -26,7 +26,7 @@ function NavigationBar({title, withLinks, withCart, withSearch}) {
             
       <Dropdown className='mx-3'>
         <Dropdown.Toggle variant="dark" id="dropdown-basic">
-        <FaUserCircle size={'2em'}/>
+        <FaRegCircleUser size={'2em'}/>
         </Dropdown.Toggle>
         <Dropdown.Menu>
         <Dropdown.Item>
