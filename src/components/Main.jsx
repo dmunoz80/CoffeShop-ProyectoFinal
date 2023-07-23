@@ -8,10 +8,10 @@ import img3 from '../assets/images/imagen3.png';
 function Main() {
 
     return (
-    <Carousel>
+    <Carousel className='my-4'>
     <Carousel.Item>
         <img
-        className="w-100"
+        className="img-Carousel w-100"
         src={img1}
         alt="First slide"
         />
@@ -19,7 +19,7 @@ function Main() {
 
     <Carousel.Item>
         <img
-        className=" w-100"
+        className="img-Carousel w-100"
         src={img2}
         alt="Second slide"
         />
@@ -27,7 +27,7 @@ function Main() {
 
     <Carousel.Item>
         <img
-        className=" w-100"
+        className="img-Carousel w-100"
         src={img3}
         alt="Third slide"
         />
