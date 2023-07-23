@@ -30,7 +30,7 @@ function NavigationBar({title, withLinks, withCart, withSearch}) {
         </Dropdown.Toggle>
         <Dropdown.Menu>
         <Dropdown.Item>
-          <NavLink to='/login' className='text-decoration-none text-dark'>INICIAR SESION</NavLink>
+          <NavLink to='/Login' className='text-decoration-none text-dark'>INICIAR SESION</NavLink>
         </Dropdown.Item>
         <Dropdown.Item>
           <NavLink to='/Registre' className='text-decoration-none text-dark'>REGISTRATE</NavLink>
