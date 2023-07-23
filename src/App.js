@@ -7,7 +7,7 @@ import Nosotros from "./views/Nosotros"
 import Cart from "./views/Cart";
 import Login from "./views/Login";
 import Registre from "./views/Registre";
-import Contacto from "./views/Contacto";
+import Comment from "./views/Comment"
 
 
 function App() {
@@ -25,6 +25,7 @@ function App() {
             <Route path="/Contacto" element={<Contacto />} />
             <Route path="/Login" element={<Login />} />
             <Route path="/Registre" element={<Registre />} />
+            <Route path="/Comment" element={<Comment />} />
           </Routes>
         </BrowserRouter>
       </GeneralProvider>
