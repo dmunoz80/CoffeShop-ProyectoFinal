@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import usersData from "../users.json"
+import { Container, Row, Col } from "react-bootstrap"
+
 
 const Formlogin = () => {
     const [username, setUsername] = useState('');
@@ -29,18 +31,31 @@ const Formlogin = () => {
 
     return (
         <div>
-            <h2>Inicio de Sesión</h2>
-            <div>
-                <label htmlFor="username">Usuario:</label>
-                <input type="text" id="username" value={username} onChange={handleUsernameChange} />
-            </div>
-            <div>
-                <label htmlFor="password">Contraseña:</label>
-                <input type="password" id="password" value={password} onChange={handlePasswordChange} />
-            </div>
-            <button onClick={handleLogin}>Iniciar sesión</button>
-            {loginError && <p style={{ color: 'red' }}>Usuario o contraseña incorrectos.</p>}
-        </div>
+            <Container style={{textAlign: "center"}}>
+                <Row>
+                    <Col>
+                        <h2 style={{marginTop: "50px"}}>Inicio de Sesión</h2>
+                    </Col>
+                    <div style={{marginTop: "15px"}}>
+                        <Col> <label htmlFor="username" style={{textAlign: "center"}} >Usuario:</label></Col>
+                        <Col> <input type="text" id="username" value={username} onChange={handleUsernameChange} /></Col>
+                    </div>
+                    <div style={{marginTop: "15px"}}>
+                        <label htmlFor="password">Contraseña:</label>
+                        <input type="password" id="password" value={password} onChange={handlePasswordChange} />
+                    </div>
+                    
+                    <button  
+                    onClick={handleLogin} 
+                    variant="outline-dark" 
+                    style={{borderColor:"#b4764f", marginTop: "20px" }} >Iniciar sesión
+                    </button>
+
+                    {loginError && <p style={{ color: 'red' }}>Usuario o contraseña incorrectos.</p>}
+
+                </Row>
+            </Container>
+        </div >
     );
 };
 
