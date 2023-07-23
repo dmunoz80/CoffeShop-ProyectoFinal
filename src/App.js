@@ -11,7 +11,7 @@ import Comment from "./views/Comment"
 
 
 function App() {
-  
+
   return (
     <div className="App">
       <GeneralProvider>
