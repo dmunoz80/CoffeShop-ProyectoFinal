@@ -22,7 +22,7 @@ const Contacto = () => {
             <div className="contacto">
                 <Row>
                     <Col>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloribus corrupti ab blanditiis debitis quibusdam quasi</p>
+                    <p className="text-white mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloribus corrupti ab blanditiis debitis quibusdam quasi</p>
                     </Col>
                     <Col>
                      <FormularioContacto onSubmit={onSubmit}/>

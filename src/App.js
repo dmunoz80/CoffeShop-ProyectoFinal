@@ -8,6 +8,7 @@ import Cart from "./views/Cart";
 import Login from "./views/Login";
 import Registre from "./views/Registre";
 import Comment from "./views/Comment"
+import Contacto from "./views/Contacto"
 
 
 function App() {

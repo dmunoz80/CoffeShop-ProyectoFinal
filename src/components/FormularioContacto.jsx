@@ -2,7 +2,7 @@ import { Button, Form } from "react-bootstrap";
 
 function FormularioContacto ({onSubmit}) {
     return (
-        <Form onSubmit={(event) => onSubmit(event)}>
+        <Form onSubmit={(event) => onSubmit(event)} className="formulario">
             <Form.Group>
                 <Form.Label>Nombre Completo</Form.Label>
                 <Form.Control type="text"/>
@@ -19,7 +19,7 @@ function FormularioContacto ({onSubmit}) {
                 <Form.Label>Mensaje</Form.Label>
                 <Form.Control as="textarea" type="text"/>
             </Form.Group>
-            <Button type="submit">Enviar</Button>
+            <Button type="submit" className="mt-2">Enviar</Button>
         </Form>
     )
 }
