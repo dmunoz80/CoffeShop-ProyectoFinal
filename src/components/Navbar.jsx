@@ -47,7 +47,7 @@ function NavigationBar({ title, withLinks, withCart, withSearch }) {
       }
       {withSearch && 
         <div className='d-flex gap-3'>
-          <Form className="d-flex">
+          <Form className="d-flex" style={{width:"300px"}}>
             <Form.Control
               value={buscar}
               onChange = {busqueda}
@@ -57,7 +57,7 @@ function NavigationBar({ title, withLinks, withCart, withSearch }) {
           </Form>
         </div>}
       {withCart && 
-        <NavLink to='/ShopCart' className='text-light text-decoration-none px-5'>
+        <NavLink to='/ShopCart' className='text-light text-decoration-none px-3'>
           <BsCart3 size={'2em'}/> ${total}
         </NavLink>
       }
