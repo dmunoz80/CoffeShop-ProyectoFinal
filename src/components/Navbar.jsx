@@ -11,10 +11,10 @@ import { FaRegCircleUser } from "react-icons/fa6";
 function NavigationBar({title, withLinks, withCart, withSearch}) {
   const { total,buscar, busqueda } = useContext(Context);
   return (
-    <Navbar className="text-light bg-dark">
+    <Navbar className=" bg-img-navbar text-light bg-dark">
       <Container>
       <Navbar.Brand>
-        <img src={logo} className='logo w-20' style={{width: "65px"}}></img>
+        <img src={logo} className='logo' style={{width: "110px"}}></img>
       </Navbar.Brand>
       {withLinks && 
           <Nav className="justify-content-end">
@@ -25,7 +25,7 @@ function NavigationBar({title, withLinks, withCart, withSearch}) {
             <NavLink to='/Contacto' className='text-decoration-none p-2 text-white with-zoom'>CONTACTO</NavLink>
             
       <Dropdown className='mx-3'>
-        <Dropdown.Toggle variant="dark" id="dropdown-basic">
+        <Dropdown.Toggle style={{backgroundColor:"#874421", borderColor:"#874421"}} id="dropdown-basic">
         <FaRegCircleUser size={'2em'}/>
         </Dropdown.Toggle>
         <Dropdown.Menu>
