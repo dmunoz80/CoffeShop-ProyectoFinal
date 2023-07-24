@@ -8,7 +8,7 @@ import img3 from '../assets/images/imagen3.png';
 function Main() {
 
     return (
-    <Carousel className='my-4'>
+    <Carousel className='carousel-inner my-4'>
     <Carousel.Item>
         <img
         className="img-Carousel w-100"
