@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 const Registre = () => {
     return (
         <div>
-            <Navbar />
+            <Navbar title={"REGISTRATE"} />
             <Formregistre />
             <FooterNavigation />
         </div>

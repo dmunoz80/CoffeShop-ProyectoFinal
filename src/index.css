@@ -1,10 +1,10 @@
 .contacto {
-  background-image: url("/src/assets/images/bg-formulario.jpg") ;
+  background-image: url("/src/assets/images/bg-formulario1.png") ;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
   padding: 10%;
-  height: calc(100vh);
+  height: calc(80vh);
 }
 
 .with-zoom {
@@ -21,10 +21,50 @@
   background-repeat: no-repeat;
   margin: 0;
   padding: 10%;
-  height: calc(15vh);
+  height: calc(10vh);
 }
 .formulario {
-  color: #ffffff;
   text-align: center;
 }
 
+.redes img {
+  width: 36px;
+  padding: 2px;
+}
+
+.carro-compras {
+  background-image: url("/src/assets/images/bgimg_carritocompras.png") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 2%;
+}
+
+.login {
+  background-image: url("/src/assets/images/bg-login.png") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 10%;
+  height: calc(80vh);
+}
+.nosotros {
+  background-image: url("/src/assets/images/bg-nosotros.png") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5%;
+  height: calc(80vh);
+}
+.carousel-inner {
+  width: 100%;
+  max-height: 800px;
+}
+
+.img-card {
+  height: 200px;
+}
+
+.img-product-detail {
+  max-height: 500px;
+  max-width: 500px;
+}

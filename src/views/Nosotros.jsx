@@ -8,7 +8,7 @@ const Nosotros = () => {
   return (
     <>
       <Navbar title={"NOSOTROS"} />
-      <Container className="mt-5 my-5">
+      <Container className="nosotros">
         <Row>
           <Col>
              <InfoNosotros
