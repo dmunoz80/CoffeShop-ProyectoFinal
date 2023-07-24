@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 
 const Registre = () => {
     return (
-        <div>
+        <div style={{backgroundColor:"#cd966c"}} >
             <Navbar title={"REGISTRATE"} />
             <Formregistre />
             <FooterNavigation />
