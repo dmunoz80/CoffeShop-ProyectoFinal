@@ -8,9 +8,8 @@ import fotologin from "../assets/images/fotologin1.png"
 
 const Login = () => {
     return (
-        <>
-        <Navbar title={"INICIO DE SESIÓN"}/>
-        <div className='login'>
+        <div style={{backgroundColor: "#cd966c"}} >
+            <Navbar />
             <Container>
                 <Row>
                     <Col>
