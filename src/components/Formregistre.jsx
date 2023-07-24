@@ -37,19 +37,19 @@ function Registre() {
 
                     <h1 style={{ textAlign: "center" }} >Registro de Usuarios</h1>
 
-                    <Col> <form onSubmit={handleSubmit}>
+                    <Col style={{ textAlign: "center", marginBottom: "50px" }} > <form onSubmit={handleSubmit}>
                         <div>
-                            <label htmlFor="firstName">Nombre:</label>
+                            <Col><label htmlFor="firstName">Nombre:</label></Col>
                             <input type="text" id="firstName" name="firstName" value={userData.firstName} onChange={handleInputChange} required />
                         </div>
                         <div>
-                            <label htmlFor="lastName">Apellido:</label>
+                            <Col><label htmlFor="lastName">Apellido:</label></Col>
                             <input type="text" id="lastName" name="lastName" value={userData.lastName} onChange={handleInputChange} required />
                         </div>
-                        <label htmlFor="address">Dirección:</label>
+                        <Col><label htmlFor="address">Dirección:</label></Col>
                         <input type="text" id="address" name="address" value={userData.address} onChange={handleInputChange} required />
                         <div>
-                            <label htmlFor="email">Correo electrónico:</label>
+                            <Col> <label htmlFor="email">Correo electrónico:</label></Col>
                             <input type="email" id="email" name="email" value={userData.email} onChange={handleInputChange} required />
                         </div>
                         <button
