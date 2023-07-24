@@ -16,7 +16,7 @@ const CommentForm = ({ onCommentSubmit }) => {
         <Container>
             <Row>
                 <form onSubmit={handleSubmit}>
-                    <div style={{alignItems:"center"}} >
+                    <div style={{ alignItems: "center" }} >
                         <Row><label htmlFor="name">Nombre:</label></Row>
                         <input
                             type="text"
@@ -35,7 +35,8 @@ const CommentForm = ({ onCommentSubmit }) => {
                             required
                         />
                     </div>
-                    <button type="submit">Enviar comentario</button>
+                    <button variant="outline-dark"
+                        style={{ borderColor: "#b4764f", marginTop: "20px", width: "200px", marginBottom: "40px" }} type="submit">Enviar comentario</button>
                 </form>
             </Row>
         </Container>
