@@ -27,7 +27,7 @@ const CommentForm = ({ onCommentSubmit }) => {
                         />
                     </div>
                     <div>
-                        <Row><label htmlFor="comment">Comentario:</label></Row>
+                        <Row ><label htmlFor="comment">Comentario:</label></Row>
                         <textarea
                             id="comment"
                             value={comment}

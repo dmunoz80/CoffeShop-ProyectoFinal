@@ -3,6 +3,8 @@ import CommentForm from '../components/CommentForm';
 import CommentList from '../components/CommentList';
 import Navbar from "../components/Navbar"
 import FooterNavigation from '../components/FooterNavigation';
+import { Container, Row, Col } from "react-bootstrap"
+
 
 const App = () => {
     const [comments, setComments] = useState([]);
@@ -28,11 +30,21 @@ const App = () => {
     };
 
     return (
-        <div>
-            <Navbar title={"COMENTARIOS"}/>
-            <CommentForm onCommentSubmit={handleCommentSubmit} />
-            <CommentList comments={comments} />
-            <FooterNavigation/>
+        <div style={{ backgroundColor: "#cd966c"}}>
+            <Navbar  title={"COMENTARIOS"}  />
+            <Container style={{display:"flex"}}>
+                <Row>
+                    <Col>
+                        <CommentForm onCommentSubmit={handleCommentSubmit} />
+                    </Col>
+                </Row>
+
+                <Row>
+                    <Col >
+                        <CommentList style={{textAlign:"center"}} comments={comments} /> </Col>
+                </Row>
+            </Container>
+            <FooterNavigation />
         </div>
     );
 };
