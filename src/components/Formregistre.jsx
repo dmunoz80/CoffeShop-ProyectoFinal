@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Container, Row, Col } from "react-bootstrap"
 
 function Registre() {
     const [userData, setUserData] = useState({
@@ -31,24 +32,33 @@ function Registre() {
 
 
         <div className="container">
-            <h1>Registro de Usuarios</h1>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="firstName">Nombre:</label>
-                <input type="text" id="firstName" name="firstName" value={userData.firstName} onChange={handleInputChange} required />
+            <Container>
+                <Row>
 
-                <label htmlFor="lastName">Apellido:</label>
-                <input type="text" id="lastName" name="lastName" value={userData.lastName} onChange={handleInputChange} required />
+                    <h1 style={{ textAlign: "center" }} >Registro de Usuarios</h1>
 
-                <label htmlFor="address">Dirección:</label>
-                <input type="text" id="address" name="address" value={userData.address} onChange={handleInputChange} required />
-
-                <label htmlFor="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" value={userData.email} onChange={handleInputChange} required />
-
-                <button type="submit">Registrarse</button>
-            </form>
-
-
+                    <Col> <form onSubmit={handleSubmit}>
+                        <div>
+                            <label htmlFor="firstName">Nombre:</label>
+                            <input type="text" id="firstName" name="firstName" value={userData.firstName} onChange={handleInputChange} required />
+                        </div>
+                        <div>
+                            <label htmlFor="lastName">Apellido:</label>
+                            <input type="text" id="lastName" name="lastName" value={userData.lastName} onChange={handleInputChange} required />
+                        </div>
+                        <label htmlFor="address">Dirección:</label>
+                        <input type="text" id="address" name="address" value={userData.address} onChange={handleInputChange} required />
+                        <div>
+                            <label htmlFor="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" value={userData.email} onChange={handleInputChange} required />
+                        </div>
+                        <button
+                            variant="outline-dark"
+                            style={{ borderColor: "#b4764f", marginTop: "20px" }}
+                            type="submit">Registrarse</button>
+                    </form> </Col>
+                </Row>
+            </Container>
         </div>
     );
 }

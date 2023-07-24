@@ -8,7 +8,7 @@ import fotologin from "../assets/images/fotologin.jpeg"
 
 const Login = () => {
     return (
-        <div>
+        <div style={{backgroundColor: "#cd966c"}} >
             <Navbar />
             <Container>
                 <Row>
