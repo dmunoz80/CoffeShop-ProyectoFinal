@@ -18,7 +18,7 @@ const ProductDetail = () => {
 
         <div className=" main-product d-flex flex-wrap justify-content-center p-5">
             <Card className="d-flex flex-row mt-5" style={{width: '80rem', borderColor:"#b4764f"}}>
-                <Card.Img className="m-4" src={productInfo.img} alt={productInfo.name} />
+                <Card.Img className="img-product-detail m-4" src={productInfo.img} alt={productInfo.name} />
                 <Card.Body className=" d-flex flex-column m-4 gap-4">
                     <Card.Title 
                         style={{backgroundColor:"#874421", borderColor:"#874421"}} 
