@@ -14,7 +14,7 @@ const ProductCard = () => {
         <div className="d-flex flex-wrap justify-content-center gap-3 p-3">
             {resultadoBusqueda.map((e) => (
                 < Card className='mt-5 with-zoom' key={e.id} style={{ width: '16rem',borderColor:"#b4764f"}}>
-                    <Card.Img src={e.img} alt={e.name} />
+                    <Card.Img className='img-card' src={e.img} alt={e.name} />
                     <Card.Body>
                         <Card.Title className='fs-4 text-center text-capitalize' >{(e.name)}</Card.Title>
                         <hr />
