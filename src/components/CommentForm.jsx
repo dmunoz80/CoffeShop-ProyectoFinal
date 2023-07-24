@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Container, Row, Col } from "react-bootstrap"
 
 const CommentForm = ({ onCommentSubmit }) => {
     const [name, setName] = useState('');
@@ -12,28 +13,32 @@ const CommentForm = ({ onCommentSubmit }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <div>
-                <label htmlFor="name">Nombre:</label>
-                <input
-                    type="text"
-                    id="name"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    required
-                />
-            </div>
-            <div>
-                <label htmlFor="comment">Comentario:</label>
-                <textarea
-                    id="comment"
-                    value={comment}
-                    onChange={(e) => setComment(e.target.value)}
-                    required
-                />
-            </div>
-            <button type="submit">Enviar comentario</button>
-        </form>
+        <Container>
+            <Row>
+                <form onSubmit={handleSubmit}>
+                    <div style={{alignItems:"center"}} >
+                        <Row><label htmlFor="name">Nombre:</label></Row>
+                        <input
+                            type="text"
+                            id="name"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <div>
+                        <Row><label htmlFor="comment">Comentario:</label></Row>
+                        <textarea
+                            id="comment"
+                            value={comment}
+                            onChange={(e) => setComment(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <button type="submit">Enviar comentario</button>
+                </form>
+            </Row>
+        </Container>
     );
 };
 
