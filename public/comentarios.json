@@ -1,0 +1,22 @@
+[
+    {
+        "usuario": "Usuario1",
+        "comentario": "Este es el comentario 1."
+    },
+    {
+        "usuario": "Usuario2",
+        "comentario": "Este es el comentario 2."
+    },
+    {
+        "usuario": "Usuario3",
+        "comentario": "Este es el comentario 3."
+    },
+    {
+        "usuario": "Usuario4",
+        "comentario": "Este es el comentario 4."
+    },
+    {
+        "usuario": "Usuario5",
+        "comentario": "Este es el comentario 5."
+    }
+]

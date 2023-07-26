@@ -1,19 +1,20 @@
 import React from 'react';
-import Formlogin from "../components/Formlogin"
 import FooterNavigation from '../components/FooterNavigation';
 import Navbar from "../components/Navbar";
 import { Container, Row, Col } from "react-bootstrap"
+import Comentarios from "../components/Comentarios"
 
 
-const Login = () => {
+
+const Comments = () => {
     return (
-        <div>
-            <Navbar />
+        <div >
+            <Navbar title={"Comentarios"} />
             <div style={{ backgroundColor: "#cd966c" }} >
                 <Container>
                     <Row>
                         <Col>
-                            <Formlogin />
+                            < Comentarios />
                         </Col>
                         <Col>
                         </Col>
@@ -21,8 +22,8 @@ const Login = () => {
                 </Container>
             </div>
             <FooterNavigation />
-        </div>
-    )
+        </div >
+    );
 }
 
-export default Login;
+export default Comments;

@@ -1,3 +1,52 @@
-{
-    "comments": []
-}
+[
+    {
+        "titulo": "Primer comentario",
+        "usuario": "Usuario1",
+        "comentario": "Este es el primer comentario."
+    },
+    {
+        "titulo": "Segundo comentario",
+        "usuario": "Usuario2",
+        "comentario": "Este es el segundo comentario."
+    },
+    {
+        "titulo": "Tercer comentario",
+        "usuario": "Usuario3",
+        "comentario": "Este es el tercer comentario."
+    },
+    {
+        "titulo": "Cuarto comentario",
+        "usuario": "Usuario4",
+        "comentario": "Este es el cuarto comentario."
+    },
+    {
+        "titulo": "Quinto comentario",
+        "usuario": "Usuario5",
+        "comentario": "Este es el quinto comentario."
+    },
+    {
+        "titulo": "Sexto comentario",
+        "usuario": "Usuario6",
+        "comentario": "Este es el sexto comentario."
+    },
+    {
+        "titulo": "Séptimo comentario",
+        "usuario": "Usuario7",
+        "comentario": "Este es el séptimo comentario."
+    },
+    {
+        "titulo": "Octavo comentario",
+        "usuario": "Usuario8",
+        "comentario": "Este es el octavo comentario."
+    },
+    {
+        "titulo": "Noveno comentario",
+        "usuario": "Usuario9",
+        "comentario": "Este es el noveno comentario."
+    },
+    {
+        "titulo": "Décimo comentario",
+        "usuario": "Usuario10",
+        "comentario": "Este es el décimo comentario."
+    }
+]

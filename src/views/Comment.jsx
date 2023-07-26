@@ -11,7 +11,7 @@ const App = () => {
 
     // Cargar comentarios guardados desde el archivo JSON
     useEffect(() => {
-        fetch('/comments.json')
+        fetch('/commentarios.json')
             .then((response) => response.json())
             .then((data) => setComments(data.comments));
     }, []);
@@ -30,9 +30,9 @@ const App = () => {
     };
 
     return (
-        <div style={{ backgroundColor: "#cd966c"}}>
-            <Navbar  title={"COMENTARIOS"}  />
-            <Container style={{display:"flex"}}>
+        <div style={{ backgroundColor: "#cd966c" }}>
+            <Navbar title={"ENVIANOS TUS COMENTARIOS"} />
+            <Container style={{ display: "flex" }}>
                 <Row>
                     <Col>
                         <CommentForm onCommentSubmit={handleCommentSubmit} />
@@ -41,7 +41,7 @@ const App = () => {
 
                 <Row>
                     <Col >
-                        <CommentList style={{textAlign:"center"}} comments={comments} /> </Col>
+                        <CommentList style={{ textAlign: "center" }} comments={comments} /> </Col>
                 </Row>
             </Container>
             <FooterNavigation />

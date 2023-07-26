@@ -9,6 +9,8 @@ import Login from "./views/Login";
 import Registre from "./views/Registre";
 import Comment from "./views/Comment"
 import Contacto from "./views/Contacto"
+import Profile from "./views/Profile";
+import Comments  from "./views/Comments";
 
 
 function App() {
@@ -25,8 +27,10 @@ function App() {
             <Route path="/ShopCart" element={<Cart />} />
             <Route path="/Contacto" element={<Contacto />} />
             <Route path="/Login" element={<Login />} />
+            <Route path="/Profile" element={<Profile />} />
             <Route path="/Registre" element={<Registre />} />
             <Route path="/Comment" element={<Comment />} />
+            <Route path="/Comments" element={<Comments />} />
           </Routes>
         </BrowserRouter>
       </GeneralProvider>
