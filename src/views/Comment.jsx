@@ -30,8 +30,9 @@ const App = () => {
     };
 
     return (
-        <div style={{ backgroundColor: "#cd966c" }}>
-            <Navbar title={"ENVIANOS TUS COMENTARIOS"} />
+        <>
+        <Navbar title={"ENVIANOS TUS COMENTARIOS"} />
+        <div className='envio-comentario' style={{ backgroundColor: "#cd966c" }}>
             <Container style={{ display: "flex" }}>
                 <Row>
                     <Col>
@@ -44,8 +45,10 @@ const App = () => {
                         <CommentList style={{ textAlign: "center" }} comments={comments} /> </Col>
                 </Row>
             </Container>
-            <FooterNavigation />
         </div>
+        <FooterNavigation />
+
+        </>
     );
 };
 
