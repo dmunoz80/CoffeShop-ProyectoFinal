@@ -8,14 +8,14 @@ const Nosotros = () => {
   return (
     <>
       <Navbar title={"NOSOTROS"} />
-      <Container className="nosotros">
+      <div className="nosotros">
         <Row>
           <Col>
              <InfoNosotros
               title={"Nuestra Historia"}
               content={"Tres Jovenes que para conservar la energía durante largas y arduas horas de trabajo se hicieron fanáticos del café. Esos primeros granos de café, que probaron entre una intensa variedad y especias del mundo se encontraban en cada taza de café que bebían. Es por esto que decideron ofrecer a cada cliente una invitación a llevarse parte de ese mundo -su mundo- a sus hogares. Y especialmente, compartirlo. "}
              />
-            <InfoNosotros
+            <InfoNosotros 
               title={"Nuestra Misión"}
               content={"Entregar alegría y proveer de energía el espíritu humano para avanzar en tu día a día."}
              />
@@ -28,7 +28,7 @@ const Nosotros = () => {
           <img src={nosotrosCafeteria} alt="" style={{borderRadius: "50px"}}></img>
           </Col>
         </Row>
-      </Container>
+      </div>
       <FooterNavigation/>
     </>
   )
