@@ -7,7 +7,7 @@ const CommentList = ({ comments }) => {
             <Container>
                 <Row style={{textAlign:"center"}}>
                     <Col>
-                        <h2>Comentarios</h2>
+                        <h2></h2>
                     </Col>
                     {comments.map((comment, index) => (
                         <div  key={index}>

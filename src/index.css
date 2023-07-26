@@ -68,3 +68,11 @@
   max-height: 500px;
   max-width: 500px;
 }
+
+.envio-comentario {
+  background-image: url("/src/assets/images/bg-envio_comentarios.png") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5%;
+  height: calc(80vh);
+}
