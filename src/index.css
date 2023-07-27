@@ -76,3 +76,11 @@
   padding: 5%;
   height: calc(80vh);
 }
+
+.agregar-producto {
+  background-image: url("/src/assets/images/bg-nosotros.png") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5%;
+  height: calc(80vh);
+}
