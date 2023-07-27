@@ -23,7 +23,7 @@ const Contacto = () => {
                 <Row>
                     <Col>
                     <h2 className="text-light">Nos encanta recibir de nuestros clientes todas sus dudas, consultas y observaciones, que siempre son bien recibidos. Nos ayudan a asegurarnos de que cada experiencia que tengas sea la mejor de las posible.</h2>
-                        <h2 className="text-light">Si nos quieres contactar comercaialmente también puedes utilizar este formulario</h2>
+                        <h2 className="text-light">Si nos quieres contactar comercialmente también puedes utilizar este formulario</h2>
                     </Col>
                     <Col>
                      <FormularioContacto onSubmit={onSubmit}/>
