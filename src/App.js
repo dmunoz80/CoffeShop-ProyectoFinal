@@ -11,6 +11,7 @@ import Comment from "./views/Comment"
 import Contacto from "./views/Contacto"
 import Profile from "./views/Profile";
 import Comments  from "./views/Comments";
+import AddProduct  from "./views/AddProduct";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
             <Route path="/Registre" element={<Registre />} />
             <Route path="/Comment" element={<Comment />} />
             <Route path="/Comments" element={<Comments />} />
+            <Route path="/AddProduct" element={<AddProduct />} />
           </Routes>
         </BrowserRouter>
       </GeneralProvider>
