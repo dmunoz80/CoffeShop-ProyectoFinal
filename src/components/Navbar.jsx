@@ -37,6 +37,9 @@ function NavigationBar({ title, withLinks, withCart, withSearch }) {
             </Dropdown.Item>
             <Dropdown.Item>
               <NavLink to='/Registre' className='text-decoration-none text-dark'>REGISTRATE</NavLink>
+            </Dropdown.Item>
+            <Dropdown.Item>
+              <NavLink to='/AddProduct' className='text-decoration-none text-dark'>AGREGAR PRODUCTOS</NavLink>
             </Dropdown.Item>    
             </Dropdown.Menu>
             </Dropdown>
