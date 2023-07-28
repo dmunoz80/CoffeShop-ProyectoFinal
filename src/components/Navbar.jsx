@@ -25,7 +25,7 @@ function NavigationBar({ title, withLinks, withCart, withSearch }) {
             <NavLink to='/Tienda' className='text-decoration-none p-2 text-white with-zoom'>TIENDA</NavLink>
             <NavLink to='/Comment' className='text-decoration-none p-2 text-white with-zoom'>COMENTARIOS</NavLink>
             <NavLink to='/Contacto' className='text-decoration-none p-2 text-white with-zoom'>CONTACTO</NavLink>
-            <NavLink to='/Comments' className='text-decoration-none p-2 text-white with-zoom'>RESEÑAS</NavLink>
+            <NavLink to='/Reviews' className='text-decoration-none p-2 text-white with-zoom'>RESEÑAS</NavLink>
 
             <Dropdown className='mx-3'>
               <Dropdown.Toggle style={{backgroundColor:"#874421", borderColor:"#874421"}} id="dropdown-basic">

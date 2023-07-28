@@ -4,10 +4,10 @@ import Navbar from "../components/Navbar";
 import Comentarios from "../components/Comentarios"
 
 
-const Comments = () => {
+const Reviews = () => {
     return (
    <>
-            <Navbar title={"Comentarios"} />
+            <Navbar title={"RESEÑAS DE CLIENTES"} />
             
             <div style={{ backgroundColor: "#cd966c" }} >
             < Comentarios />
@@ -18,4 +18,4 @@ const Comments = () => {
     );
 }
 
-export default Comments;
+export default Reviews;
