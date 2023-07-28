@@ -4,18 +4,18 @@ function FormProduct ({onSubmit}) {
     return (
         <Form onSubmit={(event) => onSubmit(event)}>
             <Form.Group>
-                <Form.Control type="text" placeholder="Nombre del Producto"/>
+                <Form.Control type="text" placeholder="Nombre del Producto" style={{borderColor:"#b4764f"}}/>
             </Form.Group>
             <Form.Group>
                 <Form.Label></Form.Label>
-                <Form.Control type="textarea" placeholder="Descripción"/>
+                <Form.Control type="textarea" placeholder="Descripción" style={{borderColor:"#b4764f"}}/>
             </Form.Group>
             <Form.Group>
                 <Form.Label></Form.Label>
-                <Form.Control type="number" placeholder="Price"/>
+                <Form.Control type="number" placeholder="Price" style={{borderColor:"#b4764f"}}/>
             </Form.Group>
             
-            <Button type="submit" className=" justify-content-center mt-2">Enviar</Button>
+            <Button type="submit" className=" justify-content-center mt-2" style={{backgroundColor:"#b4764f", borderColor:"#b4764f"}}>Enviar</Button>
         </Form>
     )
 }
