@@ -17,21 +17,21 @@ const Contacto = () => {
         console.debug("Enviando Formulario", params)
     }
     return (
-        <>
+        <div className="container-fluid justify-content-center">
             <Navbar title={"CONTACTO"}/>
-            <div className="contacto">
-                <Row>
-                    <Col>
-                    <h2 className="text-light">Nos encanta recibir de nuestros clientes todas sus dudas, consultas y observaciones, que siempre son bien recibidos. Nos ayudan a asegurarnos de que cada experiencia que tengas sea la mejor de las posible.</h2>
-                        <h2 className="text-light">Si nos quieres contactar comercialmente también puedes utilizar este formulario</h2>
+            <div className="contacto d-flex align-items-center">
+                <Row className="container-fluid gap-2 mt-3" style={{minWidth:"300px"}}>
+                    <Col style={{minWidth:"300px"}}>
+                        <p className="text-light fs-3 text-justify">Nos encanta recibir de nuestros clientes todas sus dudas, consultas y observaciones, que siempre son bien recibidos. Nos ayudan a asegurarnos de que cada experiencia que tengas sea la mejor de las posible.</p>
+                        <p className="text-light fs-3 text-justify">Si nos quieres contactar comercialmente también puedes utilizar este formulario</p>
                     </Col>
-                    <Col>
+                    <Col style={{minWidth:"300px"}}>
                      <FormularioContacto onSubmit={onSubmit}/>
                     </Col>
                 </Row>
             </div>
             <FooterNavigation/>
-        </>
+            </div>
     )
 }
 
