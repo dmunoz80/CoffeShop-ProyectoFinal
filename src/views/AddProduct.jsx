@@ -17,7 +17,7 @@ const AddProduct = () => {
     }
     return (
      
-        <div className="container-fluid justify-content-center">
+        <div className="container-fluid justify-content-center p-0">
             <Navbar title={"INGRESO DE PRODUCTOS"}/>
 
             <div className="agregar-producto d-flex align-items-center m-5">
