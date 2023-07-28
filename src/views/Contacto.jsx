@@ -17,7 +17,7 @@ const Contacto = () => {
         console.debug("Enviando Formulario", params)
     }
     return (
-        <div className="container-fluid justify-content-center">
+        <div className="container-fluid justify-content-center p-0">
             <Navbar title={"CONTACTO"}/>
             <div className="contacto d-flex align-items-center">
                 <Row className="container-fluid gap-2 mt-3" style={{minWidth:"300px"}}>
