@@ -35,8 +35,6 @@ function Registre() {
             <Container>
                 <Row>
 
-                    <h1 style={{ textAlign: "center" }} >Registro de Usuarios</h1>
-
                     <Col style={{ textAlign: "center", marginBottom: "50px" }} > <form onSubmit={handleSubmit}>
                         <div>
                             <Col><label htmlFor="firstName">Nombre:</label></Col>
