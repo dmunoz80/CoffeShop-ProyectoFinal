@@ -81,3 +81,14 @@ body {
   padding: 5%;
   height: calc(80vh);
 }
+
+.registro {
+  background-image: url("/src/assets/images/bg_registrate.png") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5%;
+  margin-top:5px;
+  margin-bottom:5px;
+  height: calc(80vh);
+}
+

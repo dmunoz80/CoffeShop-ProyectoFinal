@@ -34,21 +34,20 @@ function Registre() {
         <div className="container">
             <Container>
                 <Row>
-
                     <Col style={{ textAlign: "center", marginBottom: "50px" }} > <form onSubmit={handleSubmit}>
                         <div>
-                            <Col><label htmlFor="firstName">Nombre:</label></Col>
-                            <input type="text" id="firstName" name="firstName" value={userData.firstName} onChange={handleInputChange} required />
+                            <Col><label htmlFor="firstName"></label></Col>
+                            <input type="text" id="firstName" name="firstName" value={userData.firstName} onChange={handleInputChange} required placeholder='Nombre'/>
                         </div>
                         <div>
-                            <Col><label htmlFor="lastName">Apellido:</label></Col>
-                            <input type="text" id="lastName" name="lastName" value={userData.lastName} onChange={handleInputChange} required />
+                            <Col><label htmlFor="lastName"></label></Col>
+                            <input type="text" id="lastName" name="lastName" value={userData.lastName} onChange={handleInputChange} required placeholder='Apellido'/>
                         </div>
-                        <Col><label htmlFor="address">Dirección:</label></Col>
-                        <input type="text" id="address" name="address" value={userData.address} onChange={handleInputChange} required />
+                        <Col><label htmlFor="address"></label></Col>
+                        <input type="text" id="address" name="address" value={userData.address} onChange={handleInputChange} required placeholder='Dirección' />
                         <div>
-                            <Col> <label htmlFor="email">Correo electrónico:</label></Col>
-                            <input type="email" id="email" name="email" value={userData.email} onChange={handleInputChange} required />
+                            <Col> <label htmlFor="email"></label></Col>
+                            <input type="email" id="email" name="email" value={userData.email} onChange={handleInputChange} required placeholder='Correo Electrónico' />
                         </div>
                         <button
                             variant="outline-dark"
