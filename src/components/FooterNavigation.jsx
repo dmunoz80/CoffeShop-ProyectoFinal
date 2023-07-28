@@ -19,7 +19,7 @@ function FooterNavigation() {
             <NavLink to='/Contacto' className='text-decoration-none text-light with-zoom'>CONTACTO</NavLink>
             <NavLink to='/Login' className='text-decoration-none text-white with-zoom'>INICIAR SESION</NavLink>
             <NavLink to='/Registre' className='text-decoration-none text-white with-zoom'>REGISTRATE</NavLink>
-            <NavLink to='/Comments' className='text-decoration-none text-white with-zoom'>RESEÑAS</NavLink>
+            <NavLink to='/Reviews' className='text-decoration-none text-white with-zoom'>RESEÑAS</NavLink>
           </Nav>
         </Navbar.Collapse>
         <Navbar.Text className='text-light m-2'>Ⓒ 2023.Cofee Shop Company. Reservados todos los derechos</Navbar.Text>
