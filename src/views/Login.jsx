@@ -7,15 +7,16 @@ import { Container, Row, Col } from "react-bootstrap"
 
 const Login = () => {
     return (
-        <div>
-            <Navbar />
-            <div style={{ backgroundColor: "#cd966c" }} >
+        <div className="container-fluid justify-content-center align-items-center p-0" style={{minWidth:"300px"}}>
+            <Navbar  title={"INICIO DE SESIÓN"} />
+            <div className='login d-flex align-items-center' style={{ backgroundColor: "#cd966c" }} >
                 <Container>
-                    <Row>
+                    <Row className="container-fluid gap-2 mt-3" style={{minWidth:"300px"}}>
                         <Col>
                             <Formlogin />
                         </Col>
-                        <Col>
+                        <Col className='d-flex  align-items-center text-center'>
+                        <p className="text-light fs-3 text-justify">Nos encanta recibir a nuestros clientes. inicia sesión para que puedas realizar tus compras o dejarnos un comentario.</p>
                         </Col>
                     </Row>
                 </Container>
