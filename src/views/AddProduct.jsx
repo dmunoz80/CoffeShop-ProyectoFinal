@@ -1,7 +1,7 @@
 import FooterNavigation from "../components/FooterNavigation";
 import Navbar from "../components/Navbar";
 import {Row, Col} from "react-bootstrap";
-import nosotrosCafeteria from "../assets/images/nosotrosCafeteria.jpg"
+import imgaddproduct from "../assets/images/img-addproduct.png";
 import FormProduct from "../components/FormProduct";
 
 
@@ -19,9 +19,9 @@ const AddProduct = () => {
         <>
             <Navbar title={"INGRESO DE PRODUCTOS"}/>
             <div className="agregar-producto m-3">
-                <Row>
+                <Row className="d-flex align-items-center">
                     <Col>
-                        <img src={nosotrosCafeteria} alt="" style={{borderRadius: "50px"}}></img>
+                        <img className="imgaddproduct" src={imgaddproduct} alt="" style={{borderRadius: "50px"}}></img>
                     </Col>
                     <Col>
                         <FormProduct onSubmit={onSubmit}/>

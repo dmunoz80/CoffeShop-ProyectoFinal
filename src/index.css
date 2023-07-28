@@ -39,15 +39,6 @@
   margin: 0;
   padding: 2%;
 }
-
-.login {
-  background-image: url("/src/assets/images/bg-login.png") ;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 10%;
-  height: calc(80vh);
-}
 .nosotros {
   background-image: url("/src/assets/images/bg-nosotros.png") ;
   background-size: cover;
@@ -78,9 +69,12 @@
 }
 
 .agregar-producto {
-  background-image: url("/src/assets/images/bg-nosotros.png") ;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 5%;
   height: calc(80vh);
+}
+
+.imgaddproduct {
+  min-width: calc(50%);
 }
