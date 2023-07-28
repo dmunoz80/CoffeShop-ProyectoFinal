@@ -7,6 +7,8 @@ body {
   background-image: url("/src/assets/images/bg-formulario1.png") ;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top:5px;
+  margin-bottom:5px;
   padding: 10%;
   height: calc(80vh);
 }
@@ -78,6 +80,8 @@ body {
   background-image: url("/src/assets/images/bg_inicio_sesion.png") ;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top:5px;
+  margin-bottom:5px;
   padding: 5%;
   height: calc(80vh);
 }

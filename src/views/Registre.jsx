@@ -15,7 +15,8 @@ const Registre = () => {
             <Formregistre />
             </Col>
             <Col style={{minWidth:"300px"}}>
-                    <p className="fw-bold fs-3 text-justify">Nos encanta recibir de nuestros clientes todas sus dudas, consultas y observaciones, que siempre son bien recibidos. Nos ayudan a asegurarnos de que cada experiencia que tengas sea la mejor de las posible.</p>
+                    <p className="text-center fw-bold fs-3 text-justify m-5">Quieres acceder a promociones, descuentos y más sorpresas?</p>
+                    <p className="text-center fw-bold fs-3 text-justify m-5">Registrate y se parte de nuestra comunidad</p>
             </Col>
             </Row>
             </div>
