@@ -2,7 +2,6 @@
   background-image: url("/src/assets/images/bg-formulario1.png") ;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 0;
   padding: 10%;
   height: calc(80vh);
 }
@@ -70,6 +69,5 @@
 
 .agregar-producto {
   background-size: cover;
-  background-repeat: no-repeat;
   height: calc(70vh);
 }

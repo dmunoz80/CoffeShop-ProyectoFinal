@@ -18,7 +18,7 @@ function FormularioContacto ({onSubmit}) {
                 <Form.Label></Form.Label>
                 <Form.Control as="textarea" type="text" placeholder="Mensaje"/>
             </Form.Group>
-            <Button type="submit" className="mt-2">Enviar</Button>
+            <Button type="submit" className="m-3" style={{backgroundColor:"#b4764f", borderColor:"#b4764f"}}>Enviar</Button>
         </Form>
     )
 }
