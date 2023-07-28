@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import CommentForm from '../components/CommentForm';
-import CommentList from '../components/CommentList';
 import Navbar from "../components/Navbar"
 import FooterNavigation from '../components/FooterNavigation';
-import { Container, Row, Col } from "react-bootstrap"
 
 
 const App = () => {
@@ -32,20 +30,11 @@ const App = () => {
     return (
         <>
         <Navbar title={"ENVIANOS TUS COMENTARIOS"} />
-        <div className='envio-comentario' style={{ backgroundColor: "#cd966c" }}>
-            <Container style={{ display: "flex" }}>
-                <Row>
-                    <Col>
-                        <CommentForm onCommentSubmit={handleCommentSubmit} />
-                    </Col>
-                </Row>
 
-                <Row>
-                    <Col >
-                        <CommentList style={{ textAlign: "center" }} comments={comments} /> </Col>
-                </Row>
-            </Container>
+        <div className='envio-comentario' style={{ backgroundColor: "#cd966c" }}>
+            <CommentForm onCommentSubmit={handleCommentSubmit} />
         </div>
+
         <FooterNavigation />
 
         </>
