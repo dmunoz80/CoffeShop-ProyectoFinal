@@ -16,24 +16,27 @@ const AddProduct = () => {
         console.debug("Enviando Formulario", params)
     }
     return (
-        <>
+     
+        <div className="container-fluid justify-content-center">
             <Navbar title={"INGRESO DE PRODUCTOS"}/>
-            <div className="agregar-producto m-3">
-                <Row className="d-flex align-items-center">
+
+            <div className="agregar-producto d-flex align-items-center m-5">
+                <Row className="gap-3">
                     <Col>
-                        <img className="imgaddproduct" src={imgaddproduct} alt="" style={{borderRadius: "50px"}}></img>
+                        <img className="img-fluid" src={imgaddproduct} alt="" style={{minWidth:"300px" , borderRadius: "50px"}}></img>
                     </Col>
                     <Col>
                         <FormProduct onSubmit={onSubmit}/>
 
-                        <hr />
-                        <p > Para Incorporar productos a la BD, debes tener perfil de ususario administrador.</p>
+                        <hr className="m-3"/>
+                        <h4 className="m-3"> Importante!!! Para Incorporar productos a la BD, debes tener perfil de ususario administrador.</h4>
                     </Col>
 
                 </Row>
             </div>
             <FooterNavigation/>
-        </>
+            </div>
+       
     )
 }
 
