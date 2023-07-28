@@ -6,15 +6,15 @@ import Comentarios from "../components/Comentarios"
 
 const Reviews = () => {
     return (
-   <>
+        <>
             <Navbar title={"RESEÑAS DE CLIENTES"} />
-            
-            <div style={{ backgroundColor: "#cd966c" }} >
-            < Comentarios />
+
+            <div style={{ backgroundColor: "#FFFFFF" }} >
+                < Comentarios />
             </div>
 
             <FooterNavigation />
-            </>
+        </>
     );
 }
 

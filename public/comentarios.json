@@ -1,22 +1,29 @@
-[
-    {
-        "usuario": "Usuario1",
-        "comentario": "Este es el comentario 1."
-    },
-    {
-        "usuario": "Usuario2",
-        "comentario": "Este es el comentario 2."
-    },
-    {
-        "usuario": "Usuario3",
-        "comentario": "Este es el comentario 3."
-    },
-    {
-        "usuario": "Usuario4",
-        "comentario": "Este es el comentario 4."
-    },
-    {
-        "usuario": "Usuario5",
-        "comentario": "Este es el comentario 5."
-    }
-]
+{
+    "comentarios": [
+        {
+            "usuario": "Esteban Soto",
+            "producto": "Café en Grano Premium",
+            "comentario": "¡El café en grano es exquisito! Su aroma y sabor son incomparables. Sin duda, el mejor café que he probado. El despacho fue rápido y el empaque muy bien protegido."
+        },
+        {
+            "usuario": "Jorge Canales",
+            "producto": "Café Especial en Grano",
+            "comentario": "Este café en grano es simplemente espectacular. Cada taza es un placer para los sentidos. El servicio de despacho fue eficiente y el paquete llegó en perfectas condiciones."
+        },
+        {
+            "usuario": "Francisca Jara",
+            "producto": "Café en Grano Orgánico",
+            "comentario": "El café en grano orgánico es delicioso. Tiene un sabor suave y auténtico. Estoy muy satisfecho con la compra y el despacho fue rápido y sin problemas."
+        },
+        {
+            "usuario": "Esperanza Chamorro",
+            "producto": "Café en Grano de Origen",
+            "comentario": "Me encanta el café en grano de origen. Cada variedad tiene sus notas distintivas y son todas maravillosas. La entrega fue puntual y el café llegó fresco."
+        },
+        {
+            "usuario": "Pedro Caceres",
+            "producto": "Café en Grano para Espresso",
+            "comentario": "Este café en grano es ideal para preparar espressos. La crema que produce es perfecta. El servicio de despacho fue rápido y confiable. Seguiré comprando aquí."
+        }
+    ]
+}
