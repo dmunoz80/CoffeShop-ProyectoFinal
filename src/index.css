@@ -73,3 +73,11 @@ body {
   background-size: cover;
   height: calc(70vh);
 }
+
+.login {
+  background-image: url("/src/assets/images/bg_inicio_sesion.png") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5%;
+  height: calc(80vh);
+}
