@@ -1,4 +1,4 @@
-// ComentariosCard.js
+
 import React from 'react';
 import comentariosData from '../comentarios.json';
 
