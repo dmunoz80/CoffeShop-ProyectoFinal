@@ -10,7 +10,7 @@ import Registre from "./views/Registre";
 import Comment from "./views/Comment"
 import Contacto from "./views/Contacto"
 import Profile from "./views/Profile";
-import Comments  from "./views/Comments";
+import Reviews  from "./views/Reviews";
 import AddProduct  from "./views/AddProduct";
 
 
@@ -31,7 +31,7 @@ function App() {
             <Route path="/Profile" element={<Profile />} />
             <Route path="/Registre" element={<Registre />} />
             <Route path="/Comment" element={<Comment />} />
-            <Route path="/Comments" element={<Comments />} />
+            <Route path="/Reviews" element={<Reviews />} />
             <Route path="/AddProduct" element={<AddProduct />} />
           </Routes>
         </BrowserRouter>
