@@ -2,6 +2,7 @@ import React from 'react';
 import FooterNavigation from '../components/FooterNavigation';
 import Navbar from "../components/Navbar";
 import Comentarios from "../components/Comentarios"
+//import fondocomentario from "../assets/images/fondocomentario.jpg"
 
 
 const Reviews = () => {
@@ -9,7 +10,7 @@ const Reviews = () => {
         <>
             <Navbar title={"RESEÑAS DE CLIENTES"} />
 
-            <div style={{ backgroundColor: "#FFFFFF" }} >
+            <div  >
                 < Comentarios />
             </div>
 
