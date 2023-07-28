@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Row, Col} from "react-bootstrap"
+import { Container, Row} from "react-bootstrap"
 
 const CommentForm = ({ onCommentSubmit }) => {
     const [name, setName] = useState('');
