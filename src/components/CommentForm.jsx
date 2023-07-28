@@ -17,18 +17,20 @@ const CommentForm = ({ onCommentSubmit }) => {
             <Row>
                 <form onSubmit={handleSubmit}>
                     <div style={{ alignItems: "center" }} >
-                        <Row><label htmlFor="name">Nombre:</label></Row>
+                        <Row><label htmlFor="name"></label></Row>
                         <input
                             type="text"
                             id="name"
+                            placeholder='Nombre'
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                             required
                         />
                     </div>
                     <div>
-                        <Row ><label htmlFor="comment">Comentario:</label></Row>
+                        <Row ><label htmlFor="comment"></label></Row>
                         <textarea
+                            placeholder='Comentario'
                             id="comment"
                             value={comment}
                             onChange={(e) => setComment(e.target.value)}
