@@ -2,7 +2,7 @@ import { Button, Form } from "react-bootstrap";
 
 function FormProduct ({onSubmit}) {
     return (
-        <Form onSubmit={(event) => onSubmit(event)}>
+        <Form className="my-3" onSubmit={(event) => onSubmit(event)}>
             <Form.Group>
                 <Form.Control type="text" placeholder="Nombre del Producto" style={{borderColor:"#b4764f"}}/>
             </Form.Group>
@@ -15,7 +15,7 @@ function FormProduct ({onSubmit}) {
                 <Form.Control type="number" placeholder="Price" style={{borderColor:"#b4764f"}}/>
             </Form.Group>
             
-            <Button type="submit" className=" justify-content-center mt-2" style={{backgroundColor:"#b4764f", borderColor:"#b4764f"}}>Enviar</Button>
+            <Button type="submit" className=" justify-content-center mt-5" style={{backgroundColor:"#b4764f", borderColor:"#b4764f"}}>Enviar</Button>
         </Form>
     )
 }

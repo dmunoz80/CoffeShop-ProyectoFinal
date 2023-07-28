@@ -71,10 +71,5 @@
 .agregar-producto {
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 5%;
-  height: calc(80vh);
-}
-
-.imgaddproduct {
-  min-width: calc(50%);
+  height: calc(70vh);
 }
