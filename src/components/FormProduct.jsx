@@ -12,6 +12,10 @@ function FormProduct ({onSubmit}) {
             </Form.Group>
             <Form.Group>
                 <Form.Label></Form.Label>
+                <Form.Control type="text" placeholder="Imagen" style={{borderColor:"#b4764f"}}/>
+            </Form.Group>
+            <Form.Group>
+                <Form.Label></Form.Label>
                 <Form.Control type="number" placeholder="Price" style={{borderColor:"#b4764f"}}/>
             </Form.Group>
             
