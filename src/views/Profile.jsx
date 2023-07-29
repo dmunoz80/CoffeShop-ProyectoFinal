@@ -98,16 +98,16 @@ function App() {
 
     return (
         <>
-         <Navbar title={"MI PERFIL"} />
+         <Navbar title={"INICIA TU SESIÓN"} />
        <div className="card-miperfil container-fluid justify-content-center p-0">
             <div className='d-flex justify-content-center'>
                         {loggedInUser ? (
-                        <Card className='d-flex m-5'style={{width: '25rem', borderColor:"#b4764f"}}>
-                        <Card.Title className='fs-1 text-center'>Bienvenid@</Card.Title>
+                        <Card className='d-flex m-5'style={{width: '28rem', borderColor:"#b4764f"}}>
+                        <Card.Title className='fs-1 text-center'>Bienvenid@ a tu perfil</Card.Title>
                         <Card.Body className='m-1' >
                         <UserItem user={loggedInUser}/>
                         </Card.Body>
-                        <Button className='with-zoom m-3' onClick={handleLogout} style={{ backgroundColor:"#b4764f", borderColor: "#b4764f", width:"10rem"}} type="submit" >Cerrar sesión</Button>
+                        <Button className='with-zoom m-3' onClick={handleLogout} style={{ backgroundColor:"#b4764f", borderColor: "#b4764f", width:"12rem"}} type="submit" >Cerrar sesión</Button>
                         </Card>
                         ) : (
                         <LoginForm onLogin={handleLogin} />
