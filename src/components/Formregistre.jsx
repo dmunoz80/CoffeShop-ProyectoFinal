@@ -31,7 +31,7 @@ function Registre() {
     return (
 
 
-        <Form onSubmit={handleSubmit} className="formulario">
+        <Form onSubmit={handleSubmit} className="formulario" style={{width:"25rem" }}>
             <Form.Group>
                 <Form.Control type="text" id="firstName" name="firstName" value={userData.firstName} onChange={handleInputChange} placeholder="Nombre " />
             </Form.Group>
