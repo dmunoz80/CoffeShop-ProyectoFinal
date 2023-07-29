@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { Container, Row} from "react-bootstrap"
+import { Row } from "react-bootstrap"
+import { Button, Form } from "react-bootstrap";
+
 
 const CommentForm = ({ onCommentSubmit }) => {
     const [name, setName] = useState('');
@@ -13,35 +15,46 @@ const CommentForm = ({ onCommentSubmit }) => {
     };
 
     return (
-        <Container>
-            <Row>
-                <form onSubmit={handleSubmit}>
-                    <div style={{ alignItems: "center" }} >
-                        <Row><label htmlFor="name"></label></Row>
-                        <input
-                            type="text"
-                            id="name"
-                            placeholder='Nombre'
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
-                            required
-                        />
-                    </div>
-                    <div>
-                        <Row ><label htmlFor="comment"></label></Row>
-                        <textarea
-                            placeholder='Comentario'
-                            id="comment"
-                            value={comment}
-                            onChange={(e) => setComment(e.target.value)}
-                            required
-                        />
-                    </div>
-                    <button variant="outline-dark"
-                        style={{ borderColor: "#b4764f", marginTop: "20px", width: "200px", marginBottom: "40px" }} type="submit">Enviar comentario</button>
-                </form>
-            </Row>
-        </Container>
+
+        <Form onSubmit={handleSubmit} style={{marginTop:'50px'}} >
+            <Form.Group style={{ alignItems: "center" }} >
+                <Row><label htmlFor="name"></label></Row>
+                <Form.Control style={{ width:'300px', height:'50px', marginBottom:'20px'}}
+                    type="text"
+                    id="name"
+                    placeholder='Nombre'
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                />
+            </Form.Group>
+            <Form.Group style={{ alignItems: "center" }} >
+                <Row><label htmlFor="name"></label></Row>
+                <Form.Control style={{ width:'300px', height:'50px', marginBottom:'20px'}}
+                    type="text"
+                    id="name"
+                    placeholder='Producto'
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                />
+            </Form.Group>
+            <Form.Group>
+                <Row ><label htmlFor="comment"></label></Row>
+                <Form.Control style={{ width:'300px', height:'100px'}}
+                    placeholder='Dejanos tú comentario'
+                    id="comment"
+                    value={comment}
+                    onChange={(e) => setComment(e.target.value)}
+                    required
+                />
+            </Form.Group>
+            <Button variant="outline-dark"
+            
+            className="m-3"
+                style={{ borderColor: "#b4764f", marginTop: "20px", width: "200px", marginBottom: "40px", color:'#FFFFFF' }} type="submit">Enviar comentario</Button>
+        </Form>
+
     );
 };
 
