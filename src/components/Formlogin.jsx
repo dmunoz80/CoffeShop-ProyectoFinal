@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import usersData from "../users.json"
-import { Container, Row, Col, Button } from "react-bootstrap"
+//import { Container, Row, Col, Button } from "react-bootstrap"
+import { Button, Form } from "react-bootstrap";
+
 
 
 const Formlogin = () => {
@@ -30,31 +32,18 @@ const Formlogin = () => {
     };
 
     return (
-        <div>
-            <Container style={{ textAlign: "center" }}>
-                <Row>
-                    <div style={{ marginTop: "15px" }}>
-                        <Col> <label htmlFor="username" style={{ textAlign: "center" }}></label></Col>
-                        <Col> <input type="text" id="username" value={username} onChange={handleUsernameChange} placeholder='Usuario'/></Col>
-                    </div>
-                    <div style={{ marginTop: "15px" }}>
-                        <Col> <label htmlFor="password"></label></Col>
-                        <Col>   <input type="password" id="password" style={{borderColor:"#b4764f"}}  value={password} onChange={handlePasswordChange} placeholder='Contraseña' /></Col>
-                    </div>
-                    <Col>
-                    <Button
-                    onClick={handleLogin}
-                    type="submit" 
-                    className="m-3" 
-                    style={{backgroundColor:"#b4764f", borderColor:"#b4764f"}}
-                    >Iniciar Sesión</Button>
-                    </Col>
 
-                    {loginError && <p style={{ color: 'red' }}>Usuario o contraseña incorrectos.</p>}
+        <Form  className="formulario">
+            <Form.Group>
+                <Form.Control type="text" id="username" value={username} onChange={handleUsernameChange} placeholder="Nombre de usuario" />
+            </Form.Group>
+            <Form.Group>
+                <Form.Label></Form.Label>
+                <Form.Control type="password" id="password" style={{ borderColor: "#b4764f" }} value={password} onChange={handlePasswordChange} placeholder=" Contraseña" />
+            </Form.Group>
+            <Button  onClick={handleLogin} type="submit" className="m-3" style={{ backgroundColor: "#b4764f", borderColor: "#b4764f" }}>Enviar</Button>
+        </Form>
 
-                </Row>
-            </Container>
-        </div >
     );
 };
 
