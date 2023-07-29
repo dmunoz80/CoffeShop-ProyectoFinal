@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Row, Col } from "react-bootstrap"
+import { Button, Form } from "react-bootstrap";
 
 function Registre() {
     const [userData, setUserData] = useState({
@@ -31,32 +31,24 @@ function Registre() {
     return (
 
 
-        <div className="container">
-            <Container>
-                <Row>
-                    <Col style={{ textAlign: "center", marginBottom: "50px" }} > <form onSubmit={handleSubmit}>
-                        <div>
-                            <Col><label htmlFor="firstName"></label></Col>
-                            <input type="text" id="firstName" name="firstName" value={userData.firstName} onChange={handleInputChange} required placeholder='Nombre'/>
-                        </div>
-                        <div>
-                            <Col><label htmlFor="lastName"></label></Col>
-                            <input type="text" id="lastName" name="lastName" value={userData.lastName} onChange={handleInputChange} required placeholder='Apellido'/>
-                        </div>
-                        <Col><label htmlFor="address"></label></Col>
-                        <input type="text" id="address" name="address" value={userData.address} onChange={handleInputChange} required placeholder='Dirección' />
-                        <div>
-                            <Col> <label htmlFor="email"></label></Col>
-                            <input type="email" id="email" name="email" value={userData.email} onChange={handleInputChange} required placeholder='Correo Electrónico' />
-                        </div>
-                        <button
-                            variant="outline-dark"
-                            style={{ borderColor: "#b4764f", marginTop: "20px" }}
-                            type="submit">Registrarse</button>
-                    </form> </Col>
-                </Row>
-            </Container>
-        </div>
+        <Form onSubmit={handleSubmit} className="formulario">
+            <Form.Group>
+                <Form.Control type="text" id="firstName" name="firstName" value={userData.firstName} onChange={handleInputChange} placeholder="Nombre " />
+            </Form.Group>
+            <Form.Group>
+            <Form.Label></Form.Label>
+                <Form.Control type="text" id="lastName" name="lastName" value={userData.lastName} onChange={handleInputChange} placeholder="Apellido" />
+            </Form.Group>
+            <Form.Group>
+                <Form.Label></Form.Label>
+                <Form.Control type="email" id="email" name="email" value={userData.email} onChange={handleInputChange} placeholder="Correo Electrónico" />
+            </Form.Group>
+            <Form.Group>
+                <Form.Label></Form.Label>
+                <Form.Control  type="text" id="address" name="address" value={userData.address} onChange={handleInputChange} placeholder="Direccion" />
+            </Form.Group>
+            <Button type="submit" className="m-3" style={{ backgroundColor: "#b4764f", borderColor: "#b4764f" }}>Registrate</Button>
+        </Form>
     );
 }
 
