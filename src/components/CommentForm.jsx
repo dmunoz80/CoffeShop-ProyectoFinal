@@ -47,6 +47,7 @@ const CommentForm = ({ onCommentSubmit }) => {
                     value={comment}
                     onChange={(e) => setComment(e.target.value)}
                     required
+                    as="textarea"
                 />
             </Form.Group>
             <Button variant="outline-dark"
