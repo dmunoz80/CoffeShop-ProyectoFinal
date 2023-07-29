@@ -2,12 +2,10 @@ import React from 'react';
 import Profile from "../components/Profile";
 
 
-const Login = () => {
+const MiPerfil = () => {
     return (
-
             <Profile />
- 
     )
 }
 
-export default Login;
+export default MiPerfil;
