@@ -4,7 +4,7 @@ body {
 }
 
 .contacto {
-  background-image: url("/src/assets/images/bg-formulario1.png") ;
+  background-image: url("/src/assets/images/bg_contacto.png") ;
   background-size: cover;
   background-repeat: no-repeat;
   margin-top:5px;
@@ -22,7 +22,7 @@ body {
 }
 
 .bg-img-navbar {
-  background-image: url("/src/assets/images/img-banner.png");
+  background-image: url("/src/assets/images/img_banner.png");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
@@ -39,7 +39,7 @@ body {
 }
 
 .carro-compras {
-  background-image: url("/src/assets/images/bgimg_carritocompras.png") ;
+  background-image: url("/src/assets/images/bg_carritocompras.png") ;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
@@ -64,7 +64,7 @@ body {
 }
 
 .envio-comentario {
-  background-image: url("/src/assets/images/bg-envio_comentarios.png") ;
+  background-image: url("/src/assets/images/bg_envio_comentarios.png") ;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 5%;
