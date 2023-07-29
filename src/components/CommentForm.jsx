@@ -53,7 +53,7 @@ const CommentForm = ({ onCommentSubmit }) => {
             <Button variant="outline-dark"
             
             className="m-3"
-                style={{ borderColor: "#b4764f", marginTop: "20px", width: "200px", marginBottom: "40px", color:'#FFFFFF' }} type="submit">Enviar comentario</Button>
+                style={{ borderColor: "#b4764f", marginTop: "20px", width: "200px", marginBottom: "40px", color:'#FFFFFF' }} type="submit">ENVIAR COMENTARIO</Button>
         </Form>
 
     );

@@ -19,7 +19,7 @@ function FormProduct ({onSubmit}) {
                 <Form.Control type="number" placeholder="Price" style={{borderColor:"#b4764f"}}/>
             </Form.Group>
             
-            <Button type="submit" className=" justify-content-center mt-5" style={{backgroundColor:"#b4764f", borderColor:"#b4764f"}}>Enviar</Button>
+            <Button type="submit" className=" justify-content-center mt-5 with-zoom" style={{backgroundColor:"#b4764f", borderColor:"#b4764f", width:"12rem"}}>Enviar</Button>
         </Form>
     )
 }

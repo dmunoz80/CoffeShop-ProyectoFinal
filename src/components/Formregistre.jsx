@@ -47,7 +47,7 @@ function Registre() {
                 <Form.Label></Form.Label>
                 <Form.Control  type="text" id="address" name="address" value={userData.address} onChange={handleInputChange} placeholder="Direccion" />
             </Form.Group>
-            <Button type="submit" className="m-3" style={{ backgroundColor: "#b4764f", borderColor: "#b4764f" }}>Registrate</Button>
+            <Button type="submit" className="m-3 with-zoom" style={{ backgroundColor: "#b4764f", borderColor: "#b4764f" }}>REGISTRATE</Button>
         </Form>
     );
 }

@@ -1,25 +1,27 @@
 import React, { useState } from 'react';
 import Navbar from "../components/Navbar";
 import FooterNavigation from "../components/FooterNavigation";
-import {Row, Container, Col, Button, Card} from "react-bootstrap"
-import CardProfile from '../components/CardProfile';
+import {Container, Button, Card, Form} from "react-bootstrap"
+
 
 
 // Credenciales de usuarios (ejemplo)
 const usersData = [
-    { id: 1, username: 'john_doe', password: 'password123', name: 'John', secondname: 'Doe', email: 'johndoe@correo.com', address:'Av.Providencia, Santiago, Chile' },
-    { id: 2, username: 'jane_smith', password: 'password456', name: 'Jane', secondname: 'Smith', email: 'janesmith@correo.com', address:'Av.Pedro Montt, Valparaíso, Chile'  }
+    { id: 1, username: 'john_doe', password: 'password123', name: 'John', secondname: 'Doe', email: 'johndoe@correo.com', address:'Av.Providencia, Santiago, Chile', img:'https://randomuser.me/api/portraits/men/51.jpg' },
+    { id: 2, username: 'jane_smith', password: 'password456', name: 'Jane', secondname: 'Smith', email: 'janesmith@correo.com', address:'Av.Pedro Montt, Valparaíso, Chile',img:'https://randomuser.me/api/portraits/women/17.jpg'  }
 ];
 
 function UserItem({ user }) {
     return (
         <div className="user-item">
-            <h2>{user.name}</h2>
-            <p><strong>Nombre de usuario:</strong> {user.username}</p>
-            <p><strong>Nombre:</strong> {user.name}</p>
-            <p><strong>Apellido:</strong> {user.secondname}</p>
-            <p><strong>Correo:</strong> {user.email}</p>
-            <p><strong>Dirección:</strong> {user.address}</p>
+            <h2 className='text-center'>{user.name}</h2>
+            <hr style={{color:"#b4764f"}} />
+            <img src={user.img} alt="" />
+            <p className='m-3'><strong>Nombre de usuario:</strong> {user.username}</p>
+            <p className='m-3'><strong>Nombre:</strong> {user.name}</p>
+            <p className='m-3'><strong>Apellido:</strong> {user.secondname}</p>
+            <p className='m-3'><strong>Correo:</strong> {user.email}</p>
+            <p className='m-3'><strong>Dirección:</strong> {user.address}</p>
         </div>
     );
 }
@@ -54,28 +56,32 @@ function LoginForm({ onLogin }) {
     };
 
     return (
-        <form className="login-form" onSubmit={handleSubmit}>
-            <h1>Iniciar sesión</h1>
-            <div>
-                <label>Usuario:</label>
-                <input
+    <Container>
+        <Form onSubmit={handleSubmit} style={{marginTop:'50px'}} >
+            <Form.Group style={{ alignItems: "center" }} >
+                <Form.Label className='text-light'>USUARIO</Form.Label>
+                <Form.Control style={{ width:'300px', height:'50px', marginBottom:'20px'}}
                     type="text"
                     value={username}
                     onChange={handleUsernameChange}
                     required
                 />
-            </div>
-            <div>
-                <label>Contraseña:</label>
-                <input
+            </Form.Group>
+            <Form.Group style={{ alignItems: "center" }} >
+                <Form.Label  className='text-light'>CONTRASEÑA</Form.Label>
+                <Form.Control style={{ width:'300px', height:'50px', marginBottom:'20px'}}
                     type="password"
                     value={password}
                     onChange={handlePasswordChange}
                     required
                 />
-            </div>
-            <button type="submit">Iniciar sesión</button>
-        </form>
+            </Form.Group>
+
+            <Button
+            className=" with-zoom m-3 text-light"
+                style={{ backgroundColor:"#b4764f", borderColor: "#3f2817", marginTop: "20px", width: "200px", marginBottom: "40px"}} type="submit">Iniciar Sesión</Button>
+        </Form>
+        </Container>
     );
 }
 
@@ -91,23 +97,25 @@ function App() {
     };
 
     return (
-       <div className="container-fluid justify-content-center p-0">
-            <Navbar title={"MI PERFIL"} />
-            <div>
-            <CardProfile />
+        <>
+         <Navbar title={"MI PERFIL"} />
+       <div className="card-miperfil container-fluid justify-content-center p-0">
+            <div className='d-flex justify-content-center'>
                         {loggedInUser ? (
-                        <div className='d-flex flex-column m-5'>
-                        <h1>Bienvenido</h1>
-                        <UserItem user={loggedInUser} />
-                        <Button onClick={handleLogout} style={{backgroundColor:"#874421", borderColor:"#874421"}} >Cerrar sesión</Button>
-                        </div>
+                        <Card className='d-flex m-5'style={{width: '25rem', borderColor:"#b4764f"}}>
+                        <Card.Title className='fs-1 text-center'>Bienvenid@</Card.Title>
+                        <Card.Body className='m-1' >
+                        <UserItem user={loggedInUser}/>
+                        </Card.Body>
+                        <Button className='with-zoom m-3' onClick={handleLogout} style={{ backgroundColor:"#b4764f", borderColor: "#b4764f", width:"10rem"}} type="submit" >Cerrar sesión</Button>
+                        </Card>
                         ) : (
                         <LoginForm onLogin={handleLogin} />
                         )}
-
             </div>
-            <FooterNavigation />
         </div>
+        <FooterNavigation />
+        </>
     );
 }
 
