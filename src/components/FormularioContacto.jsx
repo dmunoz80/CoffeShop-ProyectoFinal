@@ -2,7 +2,7 @@ import { Button, Form } from "react-bootstrap";
 
 function FormularioContacto ({onSubmit}) {
     return (
-        <Form onSubmit={(event) => onSubmit(event)} className="formulario">
+        <Form onSubmit={(event) => onSubmit(event)} className="formulario" style={{maxWidth:"35rem" }}>
             <Form.Group>
                 <Form.Control type="text" placeholder="Nombre Completo"/>
             </Form.Group>
