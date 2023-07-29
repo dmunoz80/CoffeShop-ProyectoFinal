@@ -36,6 +36,9 @@ function NavigationBar({ title, withLinks, withCart, withSearch }) {
               <NavLink to='/Login' className='text-decoration-none text-dark'>INICIAR SESION</NavLink>
             </Dropdown.Item>
             <Dropdown.Item>
+              <NavLink to='/Profile' className='text-decoration-none text-dark'>MI PERFIL</NavLink>
+            </Dropdown.Item>  
+            <Dropdown.Item>
               <NavLink to='/Registre' className='text-decoration-none text-dark'>REGISTRATE</NavLink>
             </Dropdown.Item>
             <Dropdown.Item>
