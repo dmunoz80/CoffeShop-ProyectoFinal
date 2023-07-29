@@ -9,9 +9,10 @@ import Login from "./views/Login";
 import Registre from "./views/Registre";
 import Comment from "./views/Comment"
 import Contacto from "./views/Contacto"
-import Profile from "./views/Profile";
+import Profile from "./components/Profile";
 import Reviews  from "./views/Reviews";
 import AddProduct  from "./views/AddProduct";
+import MiPerfil  from "./views/MiPerfil";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
             <Route path="/Comment" element={<Comment />} />
             <Route path="/Reviews" element={<Reviews />} />
             <Route path="/AddProduct" element={<AddProduct />} />
+            <Route path="/MiPerfil" element={<MiPerfil />} />
           </Routes>
         </BrowserRouter>
       </GeneralProvider>

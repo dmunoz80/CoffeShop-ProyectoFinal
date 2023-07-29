@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Navbar from "../components/Navbar";
-import FooterNavigation from "../components/FooterNavigation";
+import Navbar from "./Navbar";
+import FooterNavigation from "./FooterNavigation";
 import {Container, Button, Card, Form} from "react-bootstrap"
 
 
@@ -85,7 +85,7 @@ function LoginForm({ onLogin }) {
     );
 }
 
-function App() {
+function Profile() {
     const [loggedInUser, setLoggedInUser] = useState(null);
 
     const handleLogin = (user) => {
@@ -119,4 +119,4 @@ function App() {
     );
 }
 
-export default App;
+export default Profile;
