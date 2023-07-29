@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import usersData from "../users.json"
-//import { Container, Row, Col, Button } from "react-bootstrap"
 import { Button, Form } from "react-bootstrap";
 
 
@@ -41,7 +40,7 @@ const Formlogin = () => {
                 <Form.Label></Form.Label>
                 <Form.Control type="password" id="password" style={{ borderColor: "#b4764f" }} value={password} onChange={handlePasswordChange} placeholder=" Contraseña" />
             </Form.Group>
-            <Button  onClick={handleLogin} type="submit" className="m-3" style={{ backgroundColor: "#b4764f", borderColor: "#b4764f" }}>Enviar</Button>
+            <Button  onClick={handleLogin} type="submit" className="m-3 with-zoom" style={{ backgroundColor: "#b4764f", borderColor: "#b4764f" }}>ENVIAR</Button>
         </Form>
 
     );

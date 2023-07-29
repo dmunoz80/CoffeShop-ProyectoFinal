@@ -96,3 +96,12 @@ body {
   height: calc(80vh);
 }
 
+.card-miperfil {
+  background-image: url("/src/assets/images/bg_miperfil.png") ;
+  background-size: cover;
+  margin-top:5px;
+  margin-bottom:5px;
+  padding: 5%;
+  height: calc(80vh);
+}
+
