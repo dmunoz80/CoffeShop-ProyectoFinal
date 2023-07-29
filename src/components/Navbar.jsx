@@ -4,7 +4,7 @@ import { Container, Navbar, Nav, Form, Dropdown } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { useContext } from 'react';
 import Context from '../Context';
-import logo from '../assets/images/navbar-logo.png';
+import logo from '../assets/images/navbar_logo.png';
 import { BsCart3 } from "react-icons/bs";
 import { FaRegCircleUser } from "react-icons/fa6";
 

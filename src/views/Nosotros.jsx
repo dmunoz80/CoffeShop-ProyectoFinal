@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import {Row, Col, Container} from "react-bootstrap"
-import nosotrosCafeteria from "../assets/images/nosotrosCafeteria.jpg"
+import nosotrosCafeteria from "../assets/images/img_nosotros.jpg"
 import InfoNosotros from "../components/InfoNosotros";
 import FooterNavigation from "../components/FooterNavigation";
 

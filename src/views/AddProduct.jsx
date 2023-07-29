@@ -1,7 +1,7 @@
 import FooterNavigation from "../components/FooterNavigation";
 import Navbar from "../components/Navbar";
 import {Row, Col} from "react-bootstrap";
-import imgaddproduct from "../assets/images/img-addproduct.png";
+import imgaddproduct from "../assets/images/img_addproduct.png";
 import FormProduct from "../components/FormProduct";
 
 
