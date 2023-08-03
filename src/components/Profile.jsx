@@ -9,14 +9,11 @@ import {Container, Button, Card, Form} from "react-bootstrap"
 function UserItem({ user }) {
     return (
         <div className="user-item">
-            <h2 className='text-center'>{user.name}</h2>
-            <hr style={{color:"#b4764f"}} />
             <img src={user.img} alt="" />
-            <p className='m-3'><strong>Nombre de usuario:</strong> {user.username}</p>
-            <p className='m-3'><strong>Nombre:</strong> {user.name}</p>
-            <p className='m-3'><strong>Apellido:</strong> {user.secondname}</p>
-            <p className='m-3'><strong>Correo:</strong> {user.email}</p>
-            <p className='m-3'><strong>Dirección:</strong> {user.address}</p>
+            <p className='m-3'><strong>Nombre:</strong> {user.nombre}</p>
+            <p className='m-3'><strong>Apellido:</strong> {user.apellido}</p>
+            <p className='m-3'><strong>Correo:</strong> {user.correo}</p>
+            <p className='m-3'><strong>Dirección:</strong> {user.direccion}</p>
         </div>
     );
 }
@@ -80,7 +77,7 @@ function Profile() {
             },
             body: JSON.stringify({
                 correo:username,
-                contraseña:password
+                contrasena:password
             })
         })
         .then( async (response) => {
