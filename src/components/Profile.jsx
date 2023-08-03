@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Navbar from "./Navbar";
 import FooterNavigation from "./FooterNavigation";
 import {Container, Button, Card, Form} from "react-bootstrap"
+import Context from '../Context';
 
 
 
@@ -68,6 +69,7 @@ function LoginForm({ onLogin }) {
 
 function Profile() {
     const [loggedInUser, setLoggedInUser] = useState(null);
+    const {dispatchUsuario, usuario} = useContext(Context)
 
     const handleLogin = (username, password) => {
         fetch(`${"http://localhost:3000"}/login`, {
@@ -88,6 +90,7 @@ function Profile() {
             sessionStorage.setItem("token", token)
             sessionStorage.setItem("usuario", JSON.stringify(decodedToken.usuario))
             setLoggedInUser(decodedToken.usuario);
+            dispatchUsuario(decodedToken.usuario);
             
         })
         .catch((error) => {
@@ -95,12 +98,22 @@ function Profile() {
             alert("usuario o contraseña no valido")
         })
         
+        
     };
 
     const handleLogout = () => {
+        sessionStorage.removeItem("token")
+        sessionStorage.removeItem("usuario")
         setLoggedInUser(null);
+        dispatchUsuario(null);
     };
+    
+    useEffect(()=>{
+        setLoggedInUser(usuario);
+    }, [usuario]) 
 
+    
+    
     return (
         <>
          <Navbar title={"INICIA TU SESIÓN"} />

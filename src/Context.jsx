@@ -3,11 +3,15 @@ import React, { createContext, useEffect, useState } from "react";
 const Context = createContext();
 
 const GeneralProvider = ({ children }) => {
+    const [usuario, setUsuario] = useState(null)
     const [products, setProducts] = useState([]);
     const [ShopCart, setShopCart] = useState([]);
     const [total, setTotal] = useState(0)
     const [buscar, setBuscar] = useState ('')
 
+    const dispatchUsuario = (usuario) => {
+        setUsuario(usuario)
+    }
 
     const dataProduct = async () => {
         const res = await fetch('/product.json');
@@ -93,6 +97,8 @@ const GeneralProvider = ({ children }) => {
     return (
         <Context.Provider value={
             {
+                usuario,
+                dispatchUsuario,
                 products,
                 setProducts,
                 handleClick,
