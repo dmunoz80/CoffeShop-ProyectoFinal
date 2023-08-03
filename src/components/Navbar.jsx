@@ -9,7 +9,7 @@ import { BsCart3 } from "react-icons/bs";
 import { FaRegCircleUser } from "react-icons/fa6";
 
 function NavigationBar({ title, withLinks, withCart, withSearch }) {
-  const { total, buscar, busqueda } = useContext(Context);
+  const { total, buscar, busqueda, usuario } = useContext(Context);
   return (
     <Navbar className=" bg-img-navbar text-light bg-dark">
       <Container>
@@ -32,18 +32,26 @@ function NavigationBar({ title, withLinks, withCart, withSearch }) {
               <FaRegCircleUser size={'2em'}/>
             </Dropdown.Toggle>
             <Dropdown.Menu>
-            <Dropdown.Item>
-              <NavLink to='/Login' className='text-decoration-none text-dark'>INICIAR SESION</NavLink>
-            </Dropdown.Item>
-            <Dropdown.Item>
-              <NavLink to='/MiPerfil' className='text-decoration-none text-dark'>MI PERFIL</NavLink>
-            </Dropdown.Item>  
-            <Dropdown.Item>
-              <NavLink to='/Registre' className='text-decoration-none text-dark'>REGISTRATE</NavLink>
-            </Dropdown.Item>
-            <Dropdown.Item>
-              <NavLink to='/AddProduct' className='text-decoration-none text-dark'>AGREGAR PRODUCTOS</NavLink>
-            </Dropdown.Item>    
+              {!usuario &&
+                <Dropdown.Item>
+                  <NavLink to='/Login' className='text-decoration-none text-dark'>INICIAR SESION</NavLink>
+                </Dropdown.Item>
+              }
+              {usuario &&
+                <Dropdown.Item>
+                  <NavLink to='/MiPerfil' className='text-decoration-none text-dark'>MI PERFIL</NavLink>
+                </Dropdown.Item>  
+              }  
+              {!usuario &&
+                <Dropdown.Item>
+                  <NavLink to='/Registre' className='text-decoration-none text-dark'>REGISTRATE</NavLink>
+                </Dropdown.Item>
+              }   
+              {usuario && usuario.rol == "admin" &&
+                <Dropdown.Item>
+                  <NavLink to='/AddProduct' className='text-decoration-none text-dark'>AGREGAR PRODUCTOS</NavLink>
+                </Dropdown.Item>
+              }                   
             </Dropdown.Menu>
             </Dropdown>
           </Nav>

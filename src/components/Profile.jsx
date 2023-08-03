@@ -1,27 +1,20 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Navbar from "./Navbar";
 import FooterNavigation from "./FooterNavigation";
 import {Container, Button, Card, Form} from "react-bootstrap"
+import Context from '../Context';
 
 
 
-// Credenciales de usuarios (ejemplo)
-const usersData = [
-    { id: 1, username: 'john_doe', password: 'password123', name: 'John', secondname: 'Doe', email: 'johndoe@correo.com', address:'Av.Providencia, Santiago, Chile', img:'https://randomuser.me/api/portraits/men/51.jpg' },
-    { id: 2, username: 'jane_smith', password: 'password456', name: 'Jane', secondname: 'Smith', email: 'janesmith@correo.com', address:'Av.Pedro Montt, Valparaíso, Chile',img:'https://randomuser.me/api/portraits/women/17.jpg'  }
-];
 
 function UserItem({ user }) {
     return (
         <div className="user-item">
-            <h2 className='text-center'>{user.name}</h2>
-            <hr style={{color:"#b4764f"}} />
             <img src={user.img} alt="" />
-            <p className='m-3'><strong>Nombre de usuario:</strong> {user.username}</p>
-            <p className='m-3'><strong>Nombre:</strong> {user.name}</p>
-            <p className='m-3'><strong>Apellido:</strong> {user.secondname}</p>
-            <p className='m-3'><strong>Correo:</strong> {user.email}</p>
-            <p className='m-3'><strong>Dirección:</strong> {user.address}</p>
+            <p className='m-3'><strong>Nombre:</strong> {user.nombre}</p>
+            <p className='m-3'><strong>Apellido:</strong> {user.apellido}</p>
+            <p className='m-3'><strong>Correo:</strong> {user.correo}</p>
+            <p className='m-3'><strong>Dirección:</strong> {user.direccion}</p>
         </div>
     );
 }
@@ -40,19 +33,8 @@ function LoginForm({ onLogin }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        // Verificar las credenciales ingresadas con las credenciales almacenadas
-        const user = usersData.find(
-            (userData) => userData.username === username && userData.password === password
-        );
-
-        if (user) {
-            onLogin(user);
-        } else {
-            alert('Credenciales incorrectas. Por favor, inténtalo de nuevo.');
-            setUsername('');
-            setPassword('');
-        }
+        onLogin(username, password);
+    
     };
 
     return (
@@ -87,15 +69,51 @@ function LoginForm({ onLogin }) {
 
 function Profile() {
     const [loggedInUser, setLoggedInUser] = useState(null);
+    const {dispatchUsuario, usuario} = useContext(Context)
 
-    const handleLogin = (user) => {
-        setLoggedInUser(user);
+    const handleLogin = (username, password) => {
+        fetch(`${"http://localhost:3000"}/login`, {
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify({
+                correo:username,
+                contrasena:password
+            })
+        })
+        .then( async (response) => {
+            const {token} = await response.json()
+            const base64Url = token.split('.')[1];
+            const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+            const decodedToken = JSON.parse(atob(base64));
+            sessionStorage.setItem("token", token)
+            sessionStorage.setItem("usuario", JSON.stringify(decodedToken.usuario))
+            setLoggedInUser(decodedToken.usuario);
+            dispatchUsuario(decodedToken.usuario);
+            
+        })
+        .catch((error) => {
+            console.log(error)
+            alert("usuario o contraseña no valido")
+        })
+        
+        
     };
 
     const handleLogout = () => {
+        sessionStorage.removeItem("token")
+        sessionStorage.removeItem("usuario")
         setLoggedInUser(null);
+        dispatchUsuario(null);
     };
+    
+    useEffect(()=>{
+        setLoggedInUser(usuario);
+    }, [usuario]) 
 
+    
+    
     return (
         <>
          <Navbar title={"INICIA TU SESIÓN"} />
