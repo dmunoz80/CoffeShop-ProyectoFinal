@@ -47,7 +47,7 @@ function NavigationBar({ title, withLinks, withCart, withSearch }) {
                   <NavLink to='/Registre' className='text-decoration-none text-dark'>REGISTRATE</NavLink>
                 </Dropdown.Item>
               }   
-              {usuario && usuario.rol == "admin" &&
+              {usuario && usuario.rol === "admin" &&
                 <Dropdown.Item>
                   <NavLink to='/AddProduct' className='text-decoration-none text-dark'>AGREGAR PRODUCTOS</NavLink>
                 </Dropdown.Item>
