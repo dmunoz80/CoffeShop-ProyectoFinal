@@ -3,7 +3,6 @@ import { Button, Form, Row } from "react-bootstrap";
 function CommentForm({ setTitle, setComment, agregarPost }) {
 
     return (
-
         <Form style={{marginTop:'50px'}} >
             <Form.Group style={{ alignItems: "center" }} >
                 <Row><label htmlFor="name"></label></Row>
