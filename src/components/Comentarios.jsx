@@ -1,7 +1,7 @@
 
 import React from 'react';
 import comentariosData from '../comentarios.json';
-import { Card, Col, Row } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
 const ComentariosCard = () => {
     return (
