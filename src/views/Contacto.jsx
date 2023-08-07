@@ -1,21 +1,35 @@
-import FooterNavigation from "../components/FooterNavigation";
 import FormularioContacto from "../components/FormularioContacto";
 import Navbar from "../components/Navbar";
+import FooterNavigation from "../components/FooterNavigation";
 import {Row, Col} from "react-bootstrap";
+import axios from "axios";
+import { useState } from "react";
+import { useEffect } from "react";
 
+const urlBaseServer = "http://localhost:3000"
 
+function Contacto() {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+    const [message, setMessage] = useState("");
+    const [posts, setPosts] = useState([]);
+  
+    const getPosts = async () => {
+      const { data: posts } = await axios.get(urlBaseServer + "/contacto");
+      setPosts([...posts]);
+    };
+  
+    const agregarComentarioContacto = async () => {
+      const post = { name,email,phone,message };
+      await axios.post(urlBaseServer + "/contacto", post);
+      getPosts();
+    };
+  
+    useEffect(() => {
+      getPosts();
+    }, []);
 
-const Contacto = () => {
-    const onSubmit = (event) => {
-        event.preventDefault()
-        const params = {
-            name:event.target[0].value,
-            email:event.target[1].value,
-            phone:event.target[2].value,
-            message:event.target[3].value
-        }
-        console.debug("Enviando Formulario", params)
-    }
     return (
         <div className="container-fluid justify-content-center p-0">
             <Navbar title={"CONTACTO"}/>
@@ -26,7 +40,14 @@ const Contacto = () => {
                         <p className="text-light fs-3 text-justify">Si nos quieres contactar comercialmente también puedes utilizar este formulario</p>
                     </Col>
                     <Col style={{minWidth:"300px"}}>
-                     <FormularioContacto onSubmit={onSubmit}/>
+                     <FormularioContacto
+                     setName={setName}
+                     setEmail={setEmail}
+                     setPhone={setPhone}
+                     setMessage={setMessage}
+                     agregarComentarioContacto={agregarComentarioContacto}
+                     
+                     />
                     </Col>
                 </Row>
             </div>

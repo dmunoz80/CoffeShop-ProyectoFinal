@@ -3,21 +3,24 @@ import { Card } from 'react-bootstrap';
 import { useState } from "react";
 import axios from "axios";
 import { useEffect } from "react";
+import { useParams} from "react-router-dom";
 
 const urlBaseServer = "http://localhost:3000";
+const token =sessionStorage.getItem("token");
 
-const ComentariosCard = () => {
+const MisComentariosCard = () => { 
   const [posts, setPosts] = useState([]);
-
-  const getPosts = async () => {
-    const { data: posts } = await axios.get(urlBaseServer + "/comentarios");
+  
+  const getPost = async (id) => {
+    const { data: posts } = await axios.get(urlBaseServer + `/comentarios/${id}`);
     setPosts([...posts]);
   };
 
   useEffect(() => {
-    getPosts();
+    getPost();
   }, []);
 
+  console.log(posts);
     return (
         <div className="container">
             <div className="row">
@@ -26,7 +29,7 @@ const ComentariosCard = () => {
                         <Card.Body>
                         <Card.Img className='img-user' style={{ width: '5rem'}} src={posts.img}/>
                             <div className='d-flex gap-2'>
-                            <Card.Text className='fs-2'>{posts.nombre}</Card.Text>
+                            <Card.Text className='fs-2'>{posts.id.nombre}</Card.Text>
                             <Card.Text className='fs-2'>{posts.apellido}</Card.Text>
                             </div>
                             <div className='d-flex'>
@@ -43,7 +46,4 @@ const ComentariosCard = () => {
     );
 };
 
-export default ComentariosCard;
-
-
-
+export default MisComentariosCard;

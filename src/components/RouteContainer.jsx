@@ -12,6 +12,7 @@ import Profile from "../components/Profile";
 import Reviews  from "../views/Reviews";
 import AddProduct  from "../views/AddProduct";
 import MiPerfil  from "../views/MiPerfil";
+import MisComentarios  from "../views/MisComentarios";
 import { useContext, useEffect } from "react";
 import Context from "../Context";
 
@@ -44,6 +45,7 @@ const RouteContainer = () => {
           <Route path="/Reviews" element={<Reviews />} />
           <Route path="/AddProduct" element={<AddProduct />} />
           <Route path="/MiPerfil" element={<MiPerfil />} />
+          <Route path="/MisComentarios/:id" element={<MisComentarios />} />
         </Routes>
       </BrowserRouter>
     )

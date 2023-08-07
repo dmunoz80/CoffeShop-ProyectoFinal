@@ -5,8 +5,6 @@ import {Container, Button, Card, Form} from "react-bootstrap"
 import Context from '../Context';
 
 
-
-
 function UserItem({ user }) {
     return (
         <div className="user-item">
