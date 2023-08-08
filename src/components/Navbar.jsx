@@ -46,16 +46,16 @@ function NavigationBar({ title, withLinks, withCart, withSearch }) {
                   <NavLink to='/Registre' className='text-decoration-none text-dark'>REGISTRATE</NavLink>
                 </Dropdown.Item>
               }   
+              {usuario && 
+                <Dropdown.Item>
+              <NavLink to='/Comment' className='text-decoration-none text-dark'>COMENTARIOS</NavLink>
+                </Dropdown.Item>
+              }  
               {usuario && usuario.rol === "admin" &&
                 <Dropdown.Item>
                   <NavLink to='/AddProduct' className='text-decoration-none text-dark'>AGREGAR PRODUCTOS</NavLink>
                 </Dropdown.Item>
-              }        
-              {usuario && usuario.rol === "admin" &&
-                <Dropdown.Item>
-                  <NavLink to='/Comment' className='text-decoration-none text-dark'>COMENTARIOS</NavLink>
-                </Dropdown.Item>
-              }              
+              }     
             </Dropdown.Menu>
             </Dropdown>
           </Nav>
