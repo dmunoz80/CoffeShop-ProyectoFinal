@@ -4,7 +4,6 @@ import FooterNavigation from "../components/FooterNavigation";
 import {Row, Col} from "react-bootstrap";
 import axios from "axios";
 import { useState } from "react";
-import { useEffect } from "react";
 
 const urlBaseServer = "http://localhost:3000"
 
@@ -13,23 +12,13 @@ function Contacto() {
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
     const [message, setMessage] = useState("");
-    const [posts, setPosts] = useState([]);
   
-    const getPosts = async () => {
-      const { data: posts } = await axios.get(urlBaseServer + "/contacto");
-      setPosts([...posts]);
-    };
   
     const agregarComentarioContacto = async () => {
       const post = { name,email,phone,message };
       await axios.post(urlBaseServer + "/contacto", post);
-      getPosts();
     };
   
-    useEffect(() => {
-      getPosts();
-    }, []);
-
     return (
         <div className="container-fluid justify-content-center p-0">
             <Navbar title={"CONTACTO"}/>
