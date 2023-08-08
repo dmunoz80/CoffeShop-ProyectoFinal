@@ -22,7 +22,7 @@ const ComentariosCard = () => {
         <div className="container">
             <div className="row">
                 {posts.map((posts) => (
-                    <Card className='mt-5' style={{ width: '600px', borderColor: "#b4764f", marginLeft: '20px', marginBottom: '20px' }}>
+                    <Card className='card-reseña mt-5' style={{ width: '600px', borderColor: "#b4764f", marginLeft: '20px', marginBottom: '20px' }}>
                         <Card.Body>
                         <Card.Img className='img-user' style={{ width: '5rem'}} src={posts.img}/>
                             <div className='d-flex gap-2'>
