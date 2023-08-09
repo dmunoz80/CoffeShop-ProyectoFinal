@@ -8,7 +8,7 @@ import Context from '../Context';
 function UserItem({ user }) {
     return (
         <div className="user-item">
-            <img src={user.img} alt="" />
+            <img src={user.img} alt="" style={{width:"200px", height:"200px"}} />
             <p className='m-3'><strong>Nombre:</strong> {user.nombre}</p>
             <p className='m-3'><strong>Apellido:</strong> {user.apellido}</p>
             <p className='m-3'><strong>Correo:</strong> {user.correo}</p>
