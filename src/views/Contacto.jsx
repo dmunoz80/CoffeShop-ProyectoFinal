@@ -5,7 +5,7 @@ import {Row, Col} from "react-bootstrap";
 import axios from "axios";
 import { useState } from "react";
 
-const urlBaseServer = "http://localhost:3000"
+const urlBaseServer = "http://localhost:3000" 
 
 function Contacto() {
     const [name, setName] = useState("");
