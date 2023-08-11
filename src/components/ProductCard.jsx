@@ -1,14 +1,26 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React from 'react';
+import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { useContext } from 'react';
 import Context from '../Context';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const ProductCard = () => {
     const {handleClick, resultadoBusqueda } = useContext(Context);
     const navigate = useNavigate();
+    const [productos, setProductos] = useState([]);
+    
+    useState(() => {
+        axios.get('URL')
+        .then(response => {
+            setProductos(response.data);
+        })
+        .catch(error => {
+            console.error('error al obtener datos de productos', error);
+        });
+    }, [])
 
     return (
         <div className="d-flex flex-wrap justify-content-center gap-3 p-3">
