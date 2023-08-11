@@ -43,19 +43,19 @@ function Registre() {
         <Form onSubmit={handleSubmit} className="formulario" style={{width:"25rem"}}>
         
             <Form.Group className="mb-3">
-                <Form.Control type="text" id="firstName" name="firstName" value={userData.firstName} onChange={handleInputChange} placeholder="Nombre " />
+                <Form.Control required type="text" id="firstName" name="firstName" value={userData.firstName} onChange={handleInputChange} placeholder="Nombre " />
             </Form.Group>
             <Form.Group className="mb-3">
-                <Form.Control type="text" id="lastName" name="lastName" value={userData.lastName} onChange={handleInputChange} placeholder="Apellido" />
+                <Form.Control required type="text" id="lastName" name="lastName" value={userData.lastName} onChange={handleInputChange} placeholder="Apellido" />
             </Form.Group>
             <Form.Group className="mb-3">
-                <Form.Control type="email" id="email" name="email" value={userData.email} onChange={handleInputChange} placeholder="Correo Electrónico" />
+                <Form.Control required type="email" id="email" name="email" value={userData.email} onChange={handleInputChange} placeholder="Correo Electrónico" />
             </Form.Group>
             <Form.Group className="mb-3">
-                <Form.Control  type="text" id="address" name="address" value={userData.address} onChange={handleInputChange} placeholder="Direccion" />
+                <Form.Control required type="text" id="address" name="address" value={userData.address} onChange={handleInputChange} placeholder="Direccion" />
             </Form.Group>
             <Form.Group className="mb-3">
-                <Form.Control  type="password" id="password" name="password" value={userData.password} onChange={handleInputChange} placeholder="Contraseña" />
+                <Form.Control required type="password" id="password" name="password" value={userData.password} onChange={handleInputChange} placeholder="Contraseña" />
             </Form.Group>
             <Form.Group className="mb-3">
                 <Form.Control  
