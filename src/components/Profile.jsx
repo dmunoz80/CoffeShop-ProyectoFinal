@@ -114,7 +114,7 @@ function Profile() {
     
     return (
         <>
-         <Navbar title={"INICIA TU SESIÓN"} />
+         <Navbar title={"BIENVENIDO"} />
        <div className="card-miperfil container-fluid justify-content-center p-0">
             <div className='d-flex justify-content-center'>
                         {loggedInUser ? (
