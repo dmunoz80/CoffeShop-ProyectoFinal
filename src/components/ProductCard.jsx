@@ -14,7 +14,7 @@ const ProductCard = () => {
     const [productos, setProductos] = useState([]);
     
     useState(() => {
-        axios.get('URL')
+        axios.get('https://prueba-cw44.onrender.com')
         .then(response => {
             setProductos(response.data);
         })
