@@ -16,7 +16,7 @@ const ProductCard = () => {
     const [productos, setProductos] = useState([]);
     
     useState(() => {
-        axios.get(backendUrl)
+        axios.get(`${process.env.backendUrl}/Productos`)
         .then(response => {
             setProductos(response.data);
         })
