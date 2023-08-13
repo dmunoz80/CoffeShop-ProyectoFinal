@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const ProductCard = () => {
+    const backendUrl = process.env.REACT_APP_BACKEND_URL;
     const {handleClick, resultadoBusqueda } = useContext(Context);
     const navigate = useNavigate();
     const [productos, setProductos] = useState([]);
