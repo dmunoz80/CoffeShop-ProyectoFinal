@@ -11,7 +11,7 @@ import { FaRegCircleUser } from "react-icons/fa6";
 function NavigationBar({ title, withLinks, withCart, withSearch }) {
   const { total, buscar, busqueda, usuario } = useContext(Context);
   return (
-    <Navbar alt="bg" className=" bg-img-navbar text-light bg-dark">
+    <Navbar >
       <Container>
     
       <Navbar.Brand>
