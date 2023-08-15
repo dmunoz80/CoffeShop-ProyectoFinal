@@ -1,14 +1,9 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
-//import Button from 'react-bootstrap/Button';
-//import Card from 'react-bootstrap/Card';
-//import { useContext } from 'react';
-//import Context from '../Context';
-//import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 
+const urlBaseServer = "http://localhost:3000";
 const MarketPlace = () => {
     const [products, setProducts] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
@@ -16,7 +11,7 @@ const MarketPlace = () => {
 
     const getProducts = async () => {
         try {
-            const response = await axios.get('https://proyectofinaltiendaback.up.railway.app/products');
+            const response = await axios.get(urlBaseServer + "/Tienda");
             setProducts(response.data.data.products);
             setIsError(false);
         } catch (error) {
@@ -45,11 +40,10 @@ const MarketPlace = () => {
                 :
                 (<div>
                     <div className='Search'>
-                        <i class="fa-solid fa-magnifying-glass fa-flip-horizontal icon"></i>
                         <input
                             type="text"
                             className="form"
-                            placeholder="Busca tu juego aquí"
+                            placeholder="Buscar cafe"
                             value={searchTerm}
                             onChange={handleSearch}
                         />
@@ -83,7 +77,6 @@ const MarketPlace = () => {
             }
         </div>
     );
-    
-
 };
+
 export default MarketPlace;
