@@ -55,7 +55,12 @@ function NavigationBar({ title, withLinks, withCart, withSearch }) {
                 <Dropdown.Item>
                   <NavLink to='/AddProduct' className='text-decoration-none text-dark'>AGREGAR PRODUCTOS</NavLink>
                 </Dropdown.Item>
-              }     
+              }    
+              {usuario && usuario.rol === "admin" &&
+                <Dropdown.Item>
+                  <NavLink to='/Usuarios' className='text-decoration-none text-dark'>USUARIOS</NavLink>
+                </Dropdown.Item>
+              }   
             </Dropdown.Menu>
             </Dropdown>
           </Nav>

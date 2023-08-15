@@ -2,6 +2,7 @@ import React, { createContext, useEffect, useState } from "react";
 
 const Context = createContext();
 
+
 const GeneralProvider = ({ children }) => {
     const [usuario, setUsuario] = useState(null)
     const [products, setProducts] = useState([]);
