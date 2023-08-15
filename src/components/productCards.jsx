@@ -11,8 +11,9 @@ const MarketPlace = () => {
 
     const getProducts = async () => {
         try {
-            const response = await axios.get(urlBaseServer + "/Tienda");
-            setProducts(response.data.data.products);
+            const response = await axios.get(urlBaseServer + "/productos");
+            console.log(response)
+            setProducts(response.data);
             setIsError(false);
         } catch (error) {
             setIsError(true);
@@ -28,7 +29,7 @@ const MarketPlace = () => {
     };
 
     const filteredProducts = products.filter((product) => {
-        return product.name.toLowerCase().includes(searchTerm.toLowerCase());
+        return product.nombre.toLowerCase().includes(searchTerm.toLowerCase());
     });
 
     return (
@@ -48,7 +49,7 @@ const MarketPlace = () => {
                             onChange={handleSearch}
                         />
                     </div>
-
+                    
                     <div className="container">
                         {filteredProducts.map((product) => {
                             const src = `/product/${product.id}`;
@@ -57,16 +58,20 @@ const MarketPlace = () => {
                                     <div key={product.id}>
                                         <div>
                                             <Link to={src}>
-                                                <img src={product.img} alt="" />
+                                                <img src={product.imagen} alt="" />
                                             </Link>
                                         </div>
                                         <div className="productName">
                                             <Link to={src}>
-                                                {product.name}
+                                                {product.nombre}
                                             </Link>
                                         </div>
+                                        <div>
+                                            <p>{product.descripcion}</p>
+                                        </div>
                                         <div className="productPrice">
-                                            ${product.price}
+                                            ${product.precio}
+    
                                         </div>
                                     </div>
                                 </div>
