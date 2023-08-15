@@ -15,7 +15,7 @@ function NavigationBar({ title, withLinks, withCart, withSearch }) {
       <Container>
     
       <Navbar.Brand>
-        <img src={logo} className='logo' style={{width: "110px"}}></img>
+        <img src={logo} alt='logo' className='logo' style={{width: "110px"}}></img>
       </Navbar.Brand>
       {withLinks && 
 
